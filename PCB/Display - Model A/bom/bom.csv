@@ -1,0 +1,11 @@
+'Qty.';'Part ID';'Description';'Mfg. SKU';'Manufacturer';'Package';'Value';
+'1';'Q1';'Ambiant light sensor';'ALS-PT19-315C/L177/TR8';'Everlight';'ALS-PT19';'-';
+'1';'J1';'2mm Single Row Header - 7 pos - SMT Vertical';'DF3X-7P-2DSA';'Hirose Electronic';'DF3X-7P-2DSA';'-';
+'2';'U5, U6';'2-input AND gate';'SN74LVC1G08DCKR';'Texas Instruments';'SC70-5';'-';
+'3';'U2, U3, U4';'Johnson decade counter';'74HC4017D';'NXP Semiconductors';'SOIC16N';'-';
+'12';'QA2, QA1, QA3, QA4, QA5, QA6, QA7, QA8, QA9, QA10, QA11, QA12';'NPN transistor - dual';'MMDT3904-7-F';'Diodes Inc.';'SOT363';'-';
+'1';'U1';'20 Pin Flash Microcontroller';'PIC16F1826-I/SS';'Microchip';'SSOP20';'-';
+'26';'R4, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, R26, R27, R28, R29, R30, R31, R32, R33, R34';'Resistor - SMT 0603 - 1k';'-';'-';'SMT 0603';'1k';
+'1';'R9';'Resistor - SMT 0603 - 10k';'-';'-';'SMT 0603';'10k';
+'7';'R1, R2, R3, R5, R6, R7, R8';'Resistor - SMT 0603 - 47';'-';'-';'SMT 0603';'47';
+'6';'C1, C2, C3, C4, C5, C6';'Capacitor - SMT 0603 - 100nF';'-';'-';'SMT 0603';'100nF';
