@@ -8,34 +8,34 @@
 </settings>
 <grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,16 +53,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -1175,6 +1175,18 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R90"/>
 </symbol>
+<symbol name="CAPACITOR">
+<wire x1="-1.905" y1="0.635" x2="0" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="0.635" x2="1.905" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-0.635" x2="0" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.635" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="0.635" width="0.1524" layer="94"/>
+<text x="1.27" y="1.27" size="1.778" layer="95" ratio="10">&gt;NAME</text>
+<text x="1.27" y="-1.27" size="1.27" layer="96" ratio="10" rot="MR180">&gt;VALUE</text>
+<pin name="1" x="0" y="2.54" visible="off" length="point" direction="pas" rot="R270"/>
+<pin name="2" x="0" y="-2.54" visible="off" length="point" direction="pas" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="RES" prefix="R" uservalue="yes">
@@ -1219,6 +1231,50 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 1206 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 1206"/>
 <attribute name="PART" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAP" prefix="C" uservalue="yes">
+<description>&lt;b&gt;Capacitor&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="CAPACITOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603" package="SMD_0603">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {value}"/>
+<attribute name="PACKAGE" value="SMT 0603"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805" package="SMD_0805">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0805 - {value}"/>
+<attribute name="PACKAGE" value="SMT 0805"/>
+</technology>
+</technologies>
+</device>
+<device name="-1206" package="SMD_1206">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 1206 - {value}"/>
+<attribute name="PACKAGE" value="SMT 1206"/>
 </technology>
 </technologies>
 </device>
@@ -1405,6 +1461,15 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <part name="R15" library="Passive" deviceset="RES" device="-0603" value="1k"/>
 <part name="R16" library="Passive" deviceset="RES" device="-0603" value="1k"/>
 <part name="SUPPLY14" library="Power" deviceset="3.3V" device=""/>
+<part name="C1" library="Passive" deviceset="CAP" device="-0603" value="100nF"/>
+<part name="GND13" library="Power" deviceset="GND" device=""/>
+<part name="C2" library="Passive" deviceset="CAP" device="-0603" value="100nF"/>
+<part name="GND14" library="Power" deviceset="GND" device=""/>
+<part name="C3" library="Passive" deviceset="CAP" device="-0805" value="N/A">
+<attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0805 - {value}"/>
+<attribute name="PACKAGE" value="SMT 0805"/>
+</part>
+<part name="GND15" library="Power" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1440,7 +1505,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <instance part="J1" gate="-5" x="162.56" y="114.3"/>
 <instance part="J1" gate="-4" x="162.56" y="116.84"/>
 <instance part="GND6" gate="GND" x="154.94" y="104.14"/>
-<instance part="SUPPLY6" gate="1.8V" x="154.94" y="129.54"/>
+<instance part="SUPPLY6" gate="1.8V" x="154.94" y="139.7"/>
 <instance part="J1" gate="-7" x="162.56" y="109.22"/>
 <instance part="D1" gate="G$1" x="81.28" y="60.96">
 <attribute name="MFG" x="81.28" y="60.96" size="1.27" layer="96" display="off"/>
@@ -1487,6 +1552,12 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <instance part="R15" gate="A" x="134.62" y="127" rot="R90"/>
 <instance part="R16" gate="A" x="144.78" y="127" rot="R90"/>
 <instance part="SUPPLY14" gate="1.8V" x="139.7" y="137.16"/>
+<instance part="C1" gate="A" x="332.74" y="152.4" rot="R90"/>
+<instance part="GND13" gate="GND" x="337.82" y="147.32"/>
+<instance part="C2" gate="A" x="43.18" y="177.8" rot="R90"/>
+<instance part="GND14" gate="GND" x="38.1" y="172.72"/>
+<instance part="C3" gate="A" x="160.02" y="132.08" rot="R90"/>
+<instance part="GND15" gate="GND" x="165.1" y="127"/>
 </instances>
 <busses>
 </busses>
@@ -1576,6 +1647,24 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <wire x1="48.26" y1="172.72" x2="48.26" y2="167.64" width="0.1524" layer="91"/>
 <junction x="48.26" y="167.64"/>
 </segment>
+<segment>
+<pinref part="C1" gate="A" pin="2"/>
+<pinref part="GND13" gate="GND" pin="GND"/>
+<wire x1="335.28" y1="152.4" x2="337.82" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="152.4" x2="337.82" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND14" gate="GND" pin="GND"/>
+<wire x1="38.1" y1="175.26" x2="38.1" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="C2" gate="A" pin="1"/>
+<wire x1="38.1" y1="177.8" x2="40.64" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C3" gate="A" pin="2"/>
+<pinref part="GND15" gate="GND" pin="GND"/>
+<wire x1="162.56" y1="132.08" x2="165.1" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="132.08" x2="165.1" y2="129.54" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -1600,15 +1689,23 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 </segment>
 <segment>
 <pinref part="SUPPLY5" gate="1.8V" pin="3.3V"/>
-<wire x1="327.66" y1="157.48" x2="327.66" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="157.48" x2="327.66" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VCC"/>
+<wire x1="327.66" y1="152.4" x2="327.66" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="149.86" x2="322.58" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C1" gate="A" pin="1"/>
+<wire x1="330.2" y1="152.4" x2="327.66" y2="152.4" width="0.1524" layer="91"/>
+<junction x="327.66" y="152.4"/>
 </segment>
 <segment>
 <pinref part="J1" gate="-1" pin="S"/>
 <wire x1="160.02" y1="124.46" x2="154.94" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="124.46" x2="154.94" y2="127" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="124.46" x2="154.94" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="SUPPLY6" gate="1.8V" pin="3.3V"/>
+<pinref part="C3" gate="A" pin="1"/>
+<wire x1="154.94" y1="132.08" x2="154.94" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="132.08" x2="154.94" y2="132.08" width="0.1524" layer="91"/>
+<junction x="154.94" y="132.08"/>
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="1.8V" pin="3.3V"/>
@@ -1676,6 +1773,9 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <wire x1="50.8" y1="177.8" x2="48.26" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="SUPPLY12" gate="1.8V" pin="3.3V"/>
 <wire x1="48.26" y1="177.8" x2="48.26" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="C2" gate="A" pin="2"/>
+<wire x1="45.72" y1="177.8" x2="48.26" y2="177.8" width="0.1524" layer="91"/>
+<junction x="48.26" y="177.8"/>
 </segment>
 <segment>
 <pinref part="SUPPLY13" gate="1.8V" pin="3.3V"/>
