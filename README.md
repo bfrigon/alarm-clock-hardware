@@ -1,4 +1,4 @@
 alarm-clock
 ===========
 
-Alarm Clock
+Project page at http://www.bfrigon.com/posts/projects/alarm-clock

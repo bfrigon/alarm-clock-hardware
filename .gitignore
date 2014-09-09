@@ -1,3 +1,6 @@
+# Ignore documents cache
+*.ods#
+
 # Ignore list for Eagle, a PCB layout tool
 
 # Backup files
@@ -36,6 +39,13 @@ eagle.epf
 *.eps
 
 gerber
-3D Model/*
-
 .directory
+
+
+# Ignore compiled objects (GPASM) #
+*.o
+*.lst
+*.cod
+*.hex
+*.cof
+*.map
