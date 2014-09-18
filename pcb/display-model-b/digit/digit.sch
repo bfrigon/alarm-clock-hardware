@@ -1050,8 +1050,8 @@ I2C-bus&lt;/li&gt;
 <attribute name="DOC_PART_NO" value="CLK-PC-05"/>
 <attribute name="DOC_REV" value="A"/>
 <attribute name="DOC_SUBTITLE" value=" "/>
-<attribute name="DOC_TITLE" value="Display (Model B) - Segment PCB"/>
-<attribute name="PROJECT_NAME" value="Alarm Clock"/>
+<attribute name="DOC_TITLE" value="7 Segment display"/>
+<attribute name="PROJECT_NAME" value="Alarm Clock (Model B)"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -1348,33 +1348,33 @@ I2C-bus&lt;/li&gt;
 <part name="R15" library="Passive" deviceset="RES" device="-0603" value="N/A"/>
 <part name="R16" library="Passive" deviceset="RES" device="-0603" value="N/A"/>
 <part name="SUPPLY8" library="Power" deviceset="3.3V" device=""/>
-<part name="R17" library="Passive" deviceset="RES" device="-0603"/>
-<part name="R18" library="Passive" deviceset="RES" device="-0603">
+<part name="R17" library="Passive" deviceset="RES" device="-0603" value="3k"/>
+<part name="R18" library="Passive" deviceset="RES" device="-0603" value="3k">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R19" library="Passive" deviceset="RES" device="-0603">
+<part name="R19" library="Passive" deviceset="RES" device="-0603" value="3k">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R20" library="Passive" deviceset="RES" device="-0603">
+<part name="R20" library="Passive" deviceset="RES" device="-0603" value="3k">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R21" library="Passive" deviceset="RES" device="-0603">
+<part name="R21" library="Passive" deviceset="RES" device="-0603" value="3k">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R22" library="Passive" deviceset="RES" device="-0603">
+<part name="R22" library="Passive" deviceset="RES" device="-0603" value="3k">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R23" library="Passive" deviceset="RES" device="-0603">
+<part name="R23" library="Passive" deviceset="RES" device="-0603" value="3k">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>

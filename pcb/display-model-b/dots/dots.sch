@@ -584,6 +584,13 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 </library>
 </libraries>
 <attributes>
+<attribute name="APVD" value=" "/>
+<attribute name="DOC_ID" value="CLK-SCH-06"/>
+<attribute name="DOC_PART_NO" value="CLK-PC-06"/>
+<attribute name="DOC_REV" value="A"/>
+<attribute name="DOC_SUBTITLE" value=" "/>
+<attribute name="DOC_TITLE" value="Dots"/>
+<attribute name="PROJECT_NAME" value="Alarm Clock (Model B)"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -596,18 +603,19 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <part name="D1" library="Optoelectronic" deviceset="LED" device="-0805" value="{ATTR:COLOR}"/>
 <part name="W1" library="Misc" deviceset="WIRE" device=""/>
 <part name="W2" library="Misc" deviceset="WIRE" device=""/>
-<part name="R1" library="Passive" deviceset="RES" device="-0603"/>
+<part name="R1" library="Passive" deviceset="RES" device="-0603" value="56"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="187.96" y="127" size="1.6764" layer="97">Yep, that's all...</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="D1" gate="G$1" x="182.88" y="132.08"/>
-<instance part="W1" gate="G$1" x="170.18" y="142.24" rot="R90"/>
-<instance part="W2" gate="G$1" x="190.5" y="142.24" rot="R90"/>
-<instance part="R1" gate="A" x="175.26" y="132.08"/>
+<instance part="D1" gate="G$1" x="198.12" y="137.16"/>
+<instance part="W1" gate="G$1" x="185.42" y="147.32" rot="R90"/>
+<instance part="W2" gate="G$1" x="205.74" y="147.32" rot="R90"/>
+<instance part="R1" gate="A" x="190.5" y="137.16"/>
 </instances>
 <busses>
 </busses>
@@ -615,32 +623,32 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <net name="VCC" class="0">
 <segment>
 <pinref part="W1" gate="G$1" pin="P$1"/>
-<wire x1="170.18" y1="139.7" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="144.78" x2="185.42" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="R1" gate="A" pin="1"/>
-<wire x1="170.18" y1="137.16" x2="170.18" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="132.08" x2="170.18" y2="132.08" width="0.1524" layer="91"/>
-<label x="167.64" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="167.64" y1="137.16" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
-<junction x="170.18" y="137.16"/>
+<wire x1="185.42" y1="142.24" x2="185.42" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="137.16" x2="185.42" y2="137.16" width="0.1524" layer="91"/>
+<label x="182.88" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="182.88" y1="142.24" x2="185.42" y2="142.24" width="0.1524" layer="91"/>
+<junction x="185.42" y="142.24"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R1" gate="A" pin="2"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="177.8" y1="132.08" x2="180.34" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="137.16" x2="195.58" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VSS" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="K"/>
-<wire x1="185.42" y1="132.08" x2="190.5" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="137.16" x2="205.74" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="W2" gate="G$1" pin="P$1"/>
-<wire x1="190.5" y1="132.08" x2="190.5" y2="137.16" width="0.1524" layer="91"/>
-<label x="193.04" y="137.16" size="1.27" layer="95" xref="yes"/>
-<wire x1="190.5" y1="137.16" x2="190.5" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="137.16" x2="193.04" y2="137.16" width="0.1524" layer="91"/>
-<junction x="190.5" y="137.16"/>
+<wire x1="205.74" y1="137.16" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
+<label x="208.28" y="142.24" size="1.27" layer="95" xref="yes"/>
+<wire x1="205.74" y1="142.24" x2="205.74" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="142.24" x2="208.28" y2="142.24" width="0.1524" layer="91"/>
+<junction x="205.74" y="142.24"/>
 </segment>
 </net>
 </nets>

@@ -19,12 +19,15 @@ CLK-DWG-09  Mech. Drawing   CLK-PC-06           Display (model B) - Dots PCB
 CLK-DWG-10  Mech. Drawing   CLK-PC-07           Display (model B) - Base PCB
 CLK-DWG-20  Mech. Drawing   CLK-AS-05           Motherboard assembly
 CLK-DWG-21  Mech. Drawing   CLK-AS-04           Left panel PCB assembly
-CLK-DWG-22  Mech. Drawing   CLK-AS-03           LED matrix assembly (Model A)
-CLK-DWG-23  Mech. Drawing   CLK-AS-01           LED matrix PCB assembly (Model A)
-CLK-DWG-24  Mech. Drawing   CLK-AS-02           Display assembly (Model A)
-CLK-DWG-25  Mech. Drawing   --                  Final assembly
-CLK-DWG-26  Mech. Drawing   CLK-AS-06           Display (model B) - Assembly
-CLK-DWG-27  Mech. Drawing   CLK-AS-07           Display (model B) - Segment PCB Assembly
+CLK-DWG-22  Mech. Drawing   CLK-AS-03           Display (model A) - LED matrix
+CLK-DWG-23  Mech. Drawing   CLK-AS-01           Display (model A) - LED matrix PCB assembly
+CLK-DWG-24  Mech. Drawing   CLK-AS-02           Display (model A) - Assembly
+CLK-DWG-25  Mech. Drawing   --                  Final assembly (Model A)
+CLK-DWG-26  Mech. Drawing   CLK-AS-07           Display (model B) - Segment PCB Assembly
+CLK-DWG-27  Mech. Drawing   CLK-AS-08           Display (model B) - Base PCB Assembly
+CLK-DWG-28  Mech. Drawing   CLK-AS-06           Display (model B) - Assembly
+CLK-DWG-29  Mech. Drawing   CLK-AS-09           Display (model B) - Dots PCB Assembly
+CLK-DWG-30  Mech. Drawing   --                  Final assembly (Model B)
 CLK-SCH-50  Schematic       TST-CLK-PC-03-AUD   Audio subsystem test PCB
 CLK-SCH-51  Schematic       CLK-PC-01-PROG      LED matrix PCB programmer adapter
 CLK-SCH-52  Schematic       TST-CLK-PC-03-PSU   PSU test PCB
