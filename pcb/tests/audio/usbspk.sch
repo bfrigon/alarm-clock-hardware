@@ -2343,12 +2343,15 @@ Source: 008-0260-0_E.pdf</description>
 <part name="GND16" library="Power" deviceset="GND" device=""/>
 <part name="R11" library="Passive" deviceset="RES" device="-0603" value="1.5k"/>
 <part name="C12" library="Passive" deviceset="CAP" device="-0603" value="1uF"/>
-<part name="C13" library="Passive" deviceset="CAP-E" device="-S1210" value="100uF"/>
-<part name="Q1" library="Crystal" deviceset="XTAL" device="HC49S" value="12MHz"/>
-<part name="C14" library="Passive" deviceset="CAP" device="-0603"/>
+<part name="C13" library="Passive" deviceset="CAP-E" device="-S1210" value="100uF 10v"/>
+<part name="Q1" library="Crystal" deviceset="XTAL" device="HC49S" value="12MHz">
+<attribute name="MFG" value="TXC"/>
+<attribute name="PART_NO" value="9C-12.000MEEJ-T"/>
+</part>
+<part name="C14" library="Passive" deviceset="CAP" device="-0603" value="18pF"/>
 <part name="GND18" library="Power" deviceset="GND" device=""/>
 <part name="R12" library="Passive" deviceset="RES" device="-0603" value="1M"/>
-<part name="C15" library="Passive" deviceset="CAP" device="-0603">
+<part name="C15" library="Passive" deviceset="CAP" device="-0603" value="18pF">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {value}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 </part>
@@ -2363,9 +2366,9 @@ Source: 008-0260-0_E.pdf</description>
 </part>
 <part name="C17" library="Passive" deviceset="CAP" device="-0603" value="1uF"/>
 <part name="GND19" library="Power" deviceset="GND" device=""/>
-<part name="C18" library="Passive" deviceset="CAP-E" device="-S0805" value="1uF"/>
+<part name="C18" library="Passive" deviceset="CAP-E" device="-S0805" value="1uF 10v"/>
 <part name="R17" library="Passive" deviceset="RES" device="-0603" value="330"/>
-<part name="C19" library="Passive" deviceset="CAP" device="-0603" value="22nF"/>
+<part name="C19" library="Passive" deviceset="CAP" device="-0603" value="0.022 uF"/>
 <part name="R16" library="Passive" deviceset="RES" device="-0603" value="16"/>
 <part name="GND20" library="Power" deviceset="GND" device=""/>
 <part name="GND21" library="Power" deviceset="GND" device=""/>
@@ -2427,7 +2430,10 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="R11" gate="A" x="137.16" y="165.1"/>
 <instance part="C12" gate="A" x="134.62" y="139.7"/>
 <instance part="C13" gate="G$1" x="203.2" y="132.08" rot="R90"/>
-<instance part="Q1" gate="G$1" x="195.58" y="195.58"/>
+<instance part="Q1" gate="G$1" x="195.58" y="195.58">
+<attribute name="MFG" x="195.58" y="195.58" size="1.27" layer="96" display="off"/>
+<attribute name="PART_NO" x="195.58" y="195.58" size="1.27" layer="96" display="off"/>
+</instance>
 <instance part="C14" gate="A" x="208.28" y="187.96" rot="R90"/>
 <instance part="GND18" gate="GND" x="213.36" y="180.34"/>
 <instance part="R12" gate="A" x="185.42" y="195.58" rot="MR270"/>

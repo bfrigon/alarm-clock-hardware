@@ -461,7 +461,9 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <connect gate="G$1" pin="P$1" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="BOM" value="FALSE"/>
+</technology>
 </technologies>
 </device>
 </devices>

@@ -8,34 +8,34 @@
 </settings>
 <grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,16 +53,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -1134,6 +1134,7 @@ Molex 22-05-3051
 </devices>
 </deviceset>
 <deviceset name="ADP230?" prefix="U">
+<description>Step-Down Regulator</description>
 <gates>
 <gate name="G$1" symbol="ADP230X" x="0" y="0"/>
 </gates>
@@ -1150,14 +1151,38 @@ Molex 22-05-3051
 <connect gate="G$1" pin="VIN" pad="2"/>
 </connects>
 <technologies>
-<technology name="2ARDZ"/>
-<technology name="2ARDZ-2.5"/>
-<technology name="2ARDZ-3.3"/>
-<technology name="2ARDZ-5.0"/>
-<technology name="3ARDZ"/>
-<technology name="3ARDZ-2.5"/>
-<technology name="3ARDZ-3.3"/>
-<technology name="3ARDZ-5.0"/>
+<technology name="2ARDZ">
+<attribute name="DESCRIPTION" value="{DESCRIPTION} - 2A, Adjustable"/>
+<attribute name="MFG" value="Analog Devices"/>
+</technology>
+<technology name="2ARDZ-2.5">
+<attribute name="DESCRIPTION" value="{DESCRIPTION} - 2A, 2.5v"/>
+<attribute name="MFG" value="Analog Devices"/>
+</technology>
+<technology name="2ARDZ-3.3">
+<attribute name="DESCRIPTION" value="{DESCRIPTION} - 2A, 3.3v"/>
+<attribute name="MFG" value="Analog Devices"/>
+</technology>
+<technology name="2ARDZ-5.0">
+<attribute name="DESCRIPTION" value="{DESCRIPTION} - 2A, 5V"/>
+<attribute name="MFG" value="Analog Devices"/>
+</technology>
+<technology name="3ARDZ">
+<attribute name="DESCRIPTION" value="{DESCRIPTION} - 3A, Adjustable"/>
+<attribute name="MFG" value="Analog Devices"/>
+</technology>
+<technology name="3ARDZ-2.5">
+<attribute name="DESCRIPTION" value="{DESCRIPTION} - 3A, 2.5v"/>
+<attribute name="MFG" value="Analog Devices"/>
+</technology>
+<technology name="3ARDZ-3.3">
+<attribute name="DESCRIPTION" value="{DESCRIPTION} - 3A, 3.3v"/>
+<attribute name="MFG" value="Analog Devices"/>
+</technology>
+<technology name="3ARDZ-5.0">
+<attribute name="DESCRIPTION" value="{DESCRIPTION} - 3A, 5V"/>
+<attribute name="MFG" value="Analog Devices"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1270,21 +1295,6 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <wire x1="3.5" y1="3" x2="3.5" y2="2.5" width="0.1778" layer="21"/>
 <text x="-3.5" y="3.3" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
 </package>
-<package name="DIODE_0603">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-1.8" y1="0.7" x2="1.9" y2="0.7" width="0" layer="39"/>
-<wire x1="1.9" y1="0.7" x2="1.9" y2="-0.7" width="0" layer="39"/>
-<wire x1="1.9" y1="-0.7" x2="-1.8" y2="-0.7" width="0" layer="39"/>
-<wire x1="-1.8" y1="-0.7" x2="-1.8" y2="0.7" width="0" layer="39"/>
-<wire x1="-1.8288" y1="0.6858" x2="1.8288" y2="0.6858" width="0.2032" layer="21"/>
-<wire x1="1.8288" y1="0.6858" x2="1.8288" y2="-0.6858" width="0.2032" layer="21"/>
-<wire x1="1.8288" y1="-0.6858" x2="-1.8288" y2="-0.6858" width="0.2032" layer="21"/>
-<wire x1="-1.8288" y1="-0.6858" x2="-1.8288" y2="0.6858" width="0.2032" layer="21"/>
-<smd name="A" x="-1" y="0" dx="1.1" dy="0.8" layer="1"/>
-<smd name="K" x="1" y="0" dx="1.1" dy="0.8" layer="1"/>
-<text x="-1.847" y="0.962" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<rectangle x1="1.778" y1="-0.7874" x2="2.3114" y2="0.7874" layer="21"/>
-</package>
 <package name="DIODE_DO41">
 <wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.1778" layer="21"/>
 <wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.1778" layer="21"/>
@@ -1346,6 +1356,32 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <wire x1="2" y1="-2.2" x2="1.4" y2="-2.2" width="0.1778" layer="21"/>
 <wire x1="-2" y1="-2.2" x2="-1.4" y2="-2.2" width="0.1778" layer="21"/>
 <text x="-2.4" y="-2.3" size="1.016" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
+</package>
+<package name="DIODE_SOD_323">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-1.8" y1="0.7" x2="1.9" y2="0.7" width="0" layer="39"/>
+<wire x1="1.9" y1="0.7" x2="1.9" y2="-0.7" width="0" layer="39"/>
+<wire x1="1.9" y1="-0.7" x2="-1.8" y2="-0.7" width="0" layer="39"/>
+<wire x1="-1.8" y1="-0.7" x2="-1.8" y2="0.7" width="0" layer="39"/>
+<wire x1="-1.8288" y1="0.6858" x2="1.8288" y2="0.6858" width="0.2032" layer="21"/>
+<wire x1="1.8288" y1="0.6858" x2="1.8288" y2="-0.6858" width="0.2032" layer="21"/>
+<wire x1="1.8288" y1="-0.6858" x2="-1.8288" y2="-0.6858" width="0.2032" layer="21"/>
+<wire x1="-1.8288" y1="-0.6858" x2="-1.8288" y2="0.6858" width="0.2032" layer="21"/>
+<smd name="A" x="-1" y="0" dx="1.1" dy="0.8" layer="1"/>
+<smd name="K" x="1" y="0" dx="1.1" dy="0.8" layer="1"/>
+<text x="-1.847" y="0.962" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<rectangle x1="1.778" y1="-0.7874" x2="2.3114" y2="0.7874" layer="21"/>
+</package>
+<package name="IND-10X10">
+<wire x1="-5" y1="5" x2="5" y2="5" width="0.1778" layer="21"/>
+<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.1778" layer="21"/>
+<smd name="1" x="-4.5" y="0" dx="4" dy="3.2" layer="1"/>
+<smd name="2" x="4.5" y="0" dx="4" dy="3.2" layer="1"/>
+<wire x1="-5" y1="5" x2="-5" y2="2" width="0.1778" layer="21"/>
+<wire x1="5" y1="5" x2="5" y2="2" width="0.1778" layer="21"/>
+<wire x1="5" y1="-5" x2="5" y2="-2" width="0.1778" layer="21"/>
+<wire x1="-5" y1="-5" x2="-5" y2="-2" width="0.1778" layer="21"/>
+<text x="-5.14" y="5.375" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -1464,8 +1500,8 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <wire x1="2.032" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <text x="-3.81" y="1.27" size="1.778" layer="95">&gt;NAME</text>
 <text x="-3.81" y="-2.54" size="1.27" layer="95">&gt;VALUE</text>
-<pin name="P$1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
-<pin name="P$2" x="2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1528,6 +1564,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <technology name="">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
+<attribute name="PART" value=""/>
 </technology>
 </technologies>
 </device>
@@ -1540,6 +1577,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <technology name="">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0805 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
+<attribute name="PART" value=""/>
 </technology>
 </technologies>
 </device>
@@ -1552,6 +1590,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <technology name="">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 1206 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 1206"/>
+<attribute name="PART" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1621,7 +1660,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <gate name="G$1" symbol="DIODE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-0603" package="DIODE_0603">
+<device name="-0603" package="DIODE_SOD_323">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="K" pad="K"/>
@@ -1666,8 +1705,8 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <devices>
 <device name="-1210" package="SMD_1210">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1675,23 +1714,21 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 </technology>
 </technologies>
 </device>
-<device name="-744373240" package="IND_4020">
+<device name="-4020" package="IND_4020">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="22">
-<attribute name="DESCRIPTION" value="{DESCRIPTION} - 22uH- 3.25A"/>
-<attribute name="MFG" value="Wurth Electronics Inc"/>
-<attribute name="SKU" value="74437324022"/>
+<technology name="">
+<attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 4020 - {VALUE}"/>
 </technology>
 </technologies>
 </device>
 <device name="-MPI4040R2-R47-R" package="IND_4045">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1699,6 +1736,15 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <attribute name="MFG" value="Cooper Bussmann"/>
 <attribute name="SKU" value="MPI4040R2-R47-R"/>
 </technology>
+</technologies>
+</device>
+<device name="-10X10" package="IND-10X10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -1745,7 +1791,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="NO_BOM" value="1"/>
+<attribute name="BOM" value="FALSE"/>
 </technology>
 </technologies>
 </device>
@@ -1755,7 +1801,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="NO_BOM" value="1"/>
+<attribute name="BOM" value="FALSE"/>
 </technology>
 </technologies>
 </device>
@@ -1765,7 +1811,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="NO_BOM" value="1"/>
+<attribute name="BOM" value="FALSE"/>
 </technology>
 </technologies>
 </device>
@@ -1793,7 +1839,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 </classes>
 <parts>
 <part name="J1" library="Connectors" deviceset="CUI-PJ-013C" device=""/>
-<part name="C1" library="Passive" deviceset="CAP" device="-0805" value="10uF 50V">
+<part name="C1" library="Passive" deviceset="CAP" device="-0805" value="10uF 25V">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0805 - {value}"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
 </part>
@@ -1801,7 +1847,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <attribute name="SUBTITLE" value="POWER SUPPLY"/>
 </part>
 <part name="U3" library="Passive" deviceset="TS4040" device="DBZ" technology="D30I"/>
-<part name="C8" library="Passive" deviceset="CAP" device="-0603"/>
+<part name="C8" library="Passive" deviceset="CAP" device="-0603" value="100nF"/>
 <part name="SUPPLY11" library="Power" deviceset="3.3V" device=""/>
 <part name="GND25" library="Power" deviceset="GND" device=""/>
 <part name="GND26" library="Power" deviceset="GND" device=""/>
@@ -1814,35 +1860,46 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <part name="GND32" library="Power" deviceset="GND" device=""/>
 <part name="U1" library="Power" deviceset="ADP230?" device="" technology="3ARDZ"/>
 <part name="GND2" library="Power" deviceset="GND" device=""/>
-<part name="L1" library="Passive" deviceset="CHOKE-?*" device="ACM7060" technology="701-2PL-TL01" value="ACM7060701-2PL-TL01"/>
+<part name="L1" library="Passive" deviceset="CHOKE-?*" device="ACM7060" technology="701-2PL-TL01" value="ACM7060701-2PL-TL01">
+<attribute name="PART_NO" value="ACM7060-701-2PL-TL01"/>
+</part>
 <part name="F1" library="Passive" deviceset="FUSE" device="1206" value="3A"/>
 <part name="GND34" library="Power" deviceset="GND" device=""/>
-<part name="C2" library="Passive" deviceset="CAP" device="-0805" value="10uF 50V">
+<part name="C2" library="Passive" deviceset="CAP" device="-0805" value="10uF 25V">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0805 - {value}"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
 </part>
-<part name="C4" library="Passive" deviceset="CAP" device="-1206" value="10uF 50v">
+<part name="C4" library="Passive" deviceset="CAP" device="-1206" value="10uF 25v">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 1206 - {value}"/>
 <attribute name="PACKAGE" value="SMT 1206"/>
 </part>
 <part name="GND35" library="Power" deviceset="GND" device=""/>
 <part name="R1" library="Passive" deviceset="RES" device="-0603" value="100k"/>
-<part name="C3" library="Passive" deviceset="CAP" device="-0603" value="100nF"/>
-<part name="D1" library="Passive" deviceset="DIODE" device="-DO214-AA" value="40V 3A"/>
+<part name="C3" library="Passive" deviceset="CAP" device="-0603" value="100nF 25v"/>
+<part name="D1" library="Passive" deviceset="DIODE" device="-DO214-AA" value="30V 4A">
+<attribute name="MFG" value="Vishay Semiconductors"/>
+<attribute name="PART_NO" value="SSB43L-E3/52T"/>
+<attribute name="SKU" value="SSB43L-E3/52T"/>
+</part>
 <part name="GND24" library="Power" deviceset="GND" device=""/>
-<part name="L2" library="Passive" deviceset="IND?*" device="-744373240" technology="22"/>
-<part name="C5" library="Passive" deviceset="CAP" device="-1206" value="100uF"/>
+<part name="L2" library="Passive" deviceset="IND?*" device="-4020" value="4.7uH">
+<attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 4020 - {VALUE}"/>
+<attribute name="MFG" value="TDK"/>
+<attribute name="PART_NO" value="CLF10040T-4R7N"/>
+<attribute name="SKU" value="CLF10040T-4R7N"/>
+</part>
+<part name="C5" library="Passive" deviceset="CAP" device="-1206" value="47uF 10v"/>
 <part name="GND37" library="Power" deviceset="GND" device=""/>
-<part name="R2" library="Passive" deviceset="RES" device="-0603" value="53.6K 1%"/>
-<part name="R3" library="Passive" deviceset="RES" device="-0603" value="10K 1%"/>
+<part name="R2" library="Passive" deviceset="RES" device="-0603" value="52.3K 1%"/>
+<part name="R3" library="Passive" deviceset="RES" device="-0603" value="10.2K 1%"/>
 <part name="GND38" library="Power" deviceset="GND" device=""/>
 <part name="GND39" library="Power" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="Power" deviceset="5V" device=""/>
 <part name="GND40" library="Power" deviceset="GND" device=""/>
 <part name="U2" library="Power" deviceset="TPS6208*RLT" device="" technology="6"/>
-<part name="L3" library="Passive" deviceset="IND?*" device="-MPI4040R2-R47-R"/>
-<part name="C6" library="Passive" deviceset="CAP" device="-1206"/>
-<part name="C7" library="Passive" deviceset="CAP" device="-1206"/>
+<part name="L3" library="Passive" deviceset="IND?*" device="-MPI4040R2-R47-R" value="470nH"/>
+<part name="C6" library="Passive" deviceset="CAP" device="-1206" value="10uF 25v"/>
+<part name="C7" library="Passive" deviceset="CAP" device="-1206" value="22uF"/>
 <part name="GND41" library="Power" deviceset="GND" device=""/>
 <part name="R4" library="Passive" deviceset="RES" device="-0603" value="100k"/>
 <part name="SUPPLY10" library="Power" deviceset="5V" device=""/>
@@ -1884,6 +1941,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <instance part="L1" gate="G$1" x="111.76" y="228.6" smashed="yes" rot="MR180">
 <attribute name="NAME" x="109.22" y="234.95" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="101.6" y="220.98" size="1.27" layer="95" rot="MR180"/>
+<attribute name="PART_NO" x="111.76" y="228.6" size="1.27" layer="96" rot="MR180" display="off"/>
 </instance>
 <instance part="F1" gate="G$1" x="129.54" y="233.68"/>
 <instance part="GND34" gate="GND" x="137.16" y="218.44"/>
@@ -1892,14 +1950,22 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <instance part="GND35" gate="GND" x="182.88" y="142.24"/>
 <instance part="R1" gate="A" x="213.36" y="144.78"/>
 <instance part="C3" gate="A" x="248.92" y="154.94" rot="R90"/>
-<instance part="D1" gate="G$1" x="264.16" y="147.32" rot="R90"/>
+<instance part="D1" gate="G$1" x="264.16" y="147.32" rot="R90">
+<attribute name="SKU" x="264.16" y="147.32" size="1.27" layer="96" rot="R90" display="off"/>
+<attribute name="MFG" x="264.16" y="147.32" size="1.27" layer="96" rot="R90" display="off"/>
+<attribute name="PART_NO" x="264.16" y="147.32" size="1.27" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="GND24" gate="GND" x="264.16" y="139.7"/>
-<instance part="L2" gate="G$1" x="271.78" y="154.94"/>
-<instance part="C5" gate="A" x="276.86" y="147.32"/>
-<instance part="GND37" gate="GND" x="276.86" y="139.7"/>
-<instance part="R2" gate="A" x="289.56" y="144.78" rot="R90"/>
-<instance part="R3" gate="A" x="289.56" y="129.54" rot="R90"/>
-<instance part="GND38" gate="GND" x="289.56" y="121.92"/>
+<instance part="L2" gate="G$1" x="271.78" y="154.94">
+<attribute name="MFG" x="271.78" y="154.94" size="1.27" layer="96" display="off"/>
+<attribute name="SKU" x="271.78" y="154.94" size="1.27" layer="96" display="off"/>
+<attribute name="PART_NO" x="271.78" y="154.94" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="C5" gate="A" x="279.4" y="147.32"/>
+<instance part="GND37" gate="GND" x="279.4" y="139.7"/>
+<instance part="R2" gate="A" x="297.18" y="144.78" rot="R90"/>
+<instance part="R3" gate="A" x="297.18" y="129.54" rot="R90"/>
+<instance part="GND38" gate="GND" x="297.18" y="121.92"/>
 <instance part="GND39" gate="GND" x="198.12" y="66.04"/>
 <instance part="SUPPLY9" gate="5V" x="198.12" y="86.36"/>
 <instance part="GND40" gate="GND" x="233.68" y="55.88"/>
@@ -1987,12 +2053,12 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <segment>
 <pinref part="GND37" gate="GND" pin="GND"/>
 <pinref part="C5" gate="A" pin="2"/>
-<wire x1="276.86" y1="142.24" x2="276.86" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="142.24" x2="279.4" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R3" gate="A" pin="1"/>
 <pinref part="GND38" gate="GND" pin="GND"/>
-<wire x1="289.56" y1="127" x2="289.56" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="127" x2="297.18" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND39" gate="GND" pin="GND"/>
@@ -2050,7 +2116,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <wire x1="279.4" y1="71.12" x2="279.4" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="VOS"/>
 <wire x1="279.4" y1="76.2" x2="261.62" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="L3" gate="G$1" pin="P$2"/>
+<pinref part="L3" gate="G$1" pin="2"/>
 <wire x1="274.32" y1="81.28" x2="279.4" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="81.28" x2="279.4" y2="76.2" width="0.1524" layer="91"/>
 <junction x="279.4" y="76.2"/>
@@ -2155,7 +2221,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <pinref part="C3" gate="A" pin="2"/>
 <wire x1="251.46" y1="154.94" x2="254" y2="154.94" width="0.1524" layer="91"/>
 <junction x="254" y="154.94"/>
-<pinref part="L2" gate="G$1" pin="P$1"/>
+<pinref part="L2" gate="G$1" pin="1"/>
 <wire x1="269.24" y1="154.94" x2="264.16" y2="154.94" width="0.1524" layer="91"/>
 <junction x="264.16" y="154.94"/>
 </segment>
@@ -2163,12 +2229,12 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <net name="N$34" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="FB"/>
-<wire x1="243.84" y1="134.62" x2="289.56" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="134.62" x2="297.18" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R2" gate="A" pin="1"/>
-<wire x1="289.56" y1="134.62" x2="289.56" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="134.62" x2="297.18" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="R3" gate="A" pin="2"/>
-<wire x1="289.56" y1="132.08" x2="289.56" y2="134.62" width="0.1524" layer="91"/>
-<junction x="289.56" y="134.62"/>
+<wire x1="297.18" y1="132.08" x2="297.18" y2="134.62" width="0.1524" layer="91"/>
+<junction x="297.18" y="134.62"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -2180,17 +2246,17 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 </net>
 <net name="5V" class="1">
 <segment>
-<pinref part="L2" gate="G$1" pin="P$2"/>
+<pinref part="L2" gate="G$1" pin="2"/>
 <pinref part="C5" gate="A" pin="1"/>
-<wire x1="274.32" y1="154.94" x2="276.86" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="154.94" x2="276.86" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="154.94" x2="279.4" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="154.94" x2="279.4" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R2" gate="A" pin="2"/>
-<wire x1="289.56" y1="147.32" x2="289.56" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="154.94" x2="276.86" y2="154.94" width="0.1524" layer="91"/>
-<junction x="276.86" y="154.94"/>
-<wire x1="289.56" y1="154.94" x2="297.18" y2="154.94" width="0.1524" layer="91"/>
-<junction x="289.56" y="154.94"/>
-<label x="297.18" y="154.94" size="1.27" layer="95" xref="yes"/>
+<wire x1="297.18" y1="147.32" x2="297.18" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="154.94" x2="279.4" y2="154.94" width="0.1524" layer="91"/>
+<junction x="279.4" y="154.94"/>
+<wire x1="297.18" y1="154.94" x2="304.8" y2="154.94" width="0.1524" layer="91"/>
+<junction x="297.18" y="154.94"/>
+<label x="304.8" y="154.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="SUPPLY9" gate="5V" pin="5V"/>
@@ -2246,7 +2312,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 </net>
 <net name="N$35" class="0">
 <segment>
-<pinref part="L3" gate="G$1" pin="P$1"/>
+<pinref part="L3" gate="G$1" pin="1"/>
 <pinref part="U2" gate="G$1" pin="SW"/>
 <wire x1="269.24" y1="81.28" x2="261.62" y2="81.28" width="0.1524" layer="91"/>
 </segment>

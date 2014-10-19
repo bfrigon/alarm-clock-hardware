@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -379,6 +379,36 @@
 <smd name="9" x="2.275" y="3.025" dx="0.35" dy="1.2" layer="1" rot="R180"/>
 <text x="-3.052" y="-2.219" size="1.016" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
 </package>
+<package name="SOIC8">
+<description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;&lt;p&gt;
+body 3.9 mm/JEDEC MS-012AA</description>
+<wire x1="-2.9" y1="3.9" x2="2.9" y2="3.9" width="0" layer="39"/>
+<wire x1="2.9" y1="3.9" x2="2.9" y2="-3.9" width="0" layer="39"/>
+<wire x1="2.9" y1="-3.9" x2="-2.9" y2="-3.9" width="0" layer="39"/>
+<wire x1="-2.9" y1="-3.9" x2="-2.9" y2="3.9" width="0" layer="39"/>
+<wire x1="2.4384" y1="1.905" x2="2.4384" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="2.4384" y1="-1.27" x2="2.4384" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-2.4384" y1="-1.905" x2="-2.4384" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-2.4384" y1="-1.27" x2="-2.4384" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-2.4384" y1="0.635" x2="-2.4384" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="2.4384" y1="-1.27" x2="-2.4384" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-1.397" y1="1.905" x2="-1.143" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-0.127" y1="1.905" x2="0.127" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="1.143" y1="1.905" x2="1.397" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-1.397" y1="-1.905" x2="-1.143" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-0.127" y1="-1.905" x2="0.127" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="1.143" y1="-1.905" x2="1.397" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-2.4384" y1="0.635" x2="-2.4384" y2="-0.635" width="0.2032" layer="21" curve="-180"/>
+<smd name="2" x="-0.635" y="-2.667" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.667" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.667" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.667" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.667" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.667" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.667" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.667" dx="0.6" dy="2.2" layer="1"/>
+<text x="-3.175" y="-1.905" size="1.016" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MPR08X">
@@ -404,6 +434,35 @@
 <pin name="SCL" x="-12.7" y="-2.54" length="short"/>
 <pin name="AD0" x="-12.7" y="-5.08" length="short"/>
 <pin name="SNDR" x="12.7" y="12.7" length="short" rot="R180"/>
+</symbol>
+<symbol name="PCA9533">
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="LED0" x="10.16" y="5.08" length="short" rot="R180"/>
+<pin name="LED1" x="10.16" y="2.54" length="short" rot="R180"/>
+<pin name="LED2" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="LED3" x="10.16" y="-2.54" length="short" rot="R180"/>
+<pin name="SDA" x="-12.7" y="2.54" length="short"/>
+<pin name="SCL" x="-12.7" y="0" length="short" direction="in"/>
+</symbol>
+<symbol name="$VCC-GND">
+<wire x1="-5.08" y1="1.905" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.905" x2="5.08" y2="1.905" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.905" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.905" x2="-5.08" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-1.905" x2="-5.08" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.905" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<text x="0.635" y="2.54" size="1.27" layer="95" rot="MR90">VCC</text>
+<text x="0.635" y="-2.54" size="1.27" layer="95" rot="R270">GND</text>
+<text x="-3.81" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<pin name="VCC" x="0" y="5.08" visible="pad" length="short" direction="pwr" rot="R270"/>
+<pin name="GND" x="0" y="-5.08" visible="pad" length="short" direction="pwr" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -433,6 +492,56 @@
 </connects>
 <technologies>
 <technology name="4"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PCA9533?" prefix="U">
+<description>&lt;b&gt;4-bit I2C LED dimmer&lt;/b&gt;
+&lt;p&gt;
+The PCA9533 is a 4-bit I2C and SMBus I/O expander optimized for dimming LEDs in 256 discrete steps for Red/Green/Blue (RGB) color mixing and back light applications.
+&lt;/p&gt;
+&lt;p&gt;
+The PCA9533 contains an internal oscillator with two user programmable blink rates and duty cycles coupled to the output PWM. The LED brightness is controlled by setting the blink rate high enough (&gt; 100 Hz) that the blinking cannot be seen and then using the duty cycle to vary the amount of time the LED is on and thus the average current through the LED.
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;4 LED drivers (on, off, flashing at a programmable rate)&lt;/li&gt;
+&lt;li&gt;2 selectable, fully programmable blink rates (frequency and duty cycle) between 0.591 Hz and 152 Hz (1.69 seconds and 6.58 milliseconds)&lt;/li&gt;
+&lt;li&gt;256 brightness steps&lt;/li&gt;
+&lt;li&gt;Input/outputs not used as LED drivers can be used as regular GPIOs&lt;/li&gt;
+&lt;li&gt;Internal oscillator requires no external components&lt;/li&gt;
+&lt;li&gt;I2C interface logic compatible with SMBus&lt;/li&gt;
+&lt;li&gt;Internal power-on reset&lt;/li&gt;
+&lt;li&gt;Noise filter on SCL/SDA inputs&lt;/li&gt;
+&lt;li&gt;4 open drain outputs directly drive LEDs to 25 mA&lt;/li&gt;
+&lt;li&gt;No glitch on power-up&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="PCA9533" x="0" y="0" addlevel="always"/>
+<gate name=":PW" symbol="$VCC-GND" x="-35.56" y="5.08" addlevel="request"/>
+</gates>
+<devices>
+<device name="D" package="SOIC8">
+<connects>
+<connect gate=":PW" pin="GND" pad="4"/>
+<connect gate=":PW" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="LED0" pad="1"/>
+<connect gate="G$1" pin="LED1" pad="2"/>
+<connect gate="G$1" pin="LED2" pad="3"/>
+<connect gate="G$1" pin="LED3" pad="5"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="7"/>
+</connects>
+<technologies>
+<technology name="/01">
+<attribute name="ADDR" value="0xC4"/>
+<attribute name="MFG" value="NXP Semiconductors"/>
+</technology>
+<technology name="/02">
+<attribute name="ADDR" value="0xC6"/>
+<attribute name="MFG" value="NXP Semiconductors"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -515,7 +624,9 @@
 <connect gate="G$1" pin="P$1" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="BOM" value="FALSE"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -614,6 +725,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <technology name="">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
+<attribute name="PART" value=""/>
 </technology>
 </technologies>
 </device>
@@ -626,6 +738,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <technology name="">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0805 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
+<attribute name="PART" value=""/>
 </technology>
 </technologies>
 </device>
@@ -638,6 +751,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <technology name="">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 1206 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 1206"/>
+<attribute name="PART" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -689,6 +803,146 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Optoelectronic">
+<packages>
+<package name="LED_3MM">
+<wire x1="-1.3" y1="0.9" x2="-1.25" y2="-0.95" width="0.2032" layer="51" curve="71.788815"/>
+<wire x1="1.3" y1="0.95" x2="1.3" y2="-0.9" width="0.2032" layer="51" curve="-71.921034"/>
+<wire x1="-1.75" y1="-0.95" x2="-1.75" y2="0.95" width="0.2032" layer="51" curve="-56.717927"/>
+<wire x1="1.6" y1="-1.2" x2="1.6" y2="-0.85" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="1.2" x2="1.6" y2="0.85" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="0.85" x2="1.6" y2="-0.85" width="0.2032" layer="51"/>
+<wire x1="-1.75" y1="0.95" x2="1.6" y2="1.2" width="0.2032" layer="21" curve="-114.746955"/>
+<wire x1="-1.75" y1="-0.95" x2="1.6" y2="-1.2" width="0.2032" layer="21" curve="114.746955"/>
+<wire x1="-1.3" y1="0.9" x2="1.3" y2="0.95" width="0.2032" layer="21" curve="-109.104117"/>
+<wire x1="-1.25" y1="-0.95" x2="1.3" y2="-0.9" width="0.2032" layer="21" curve="107.363851"/>
+<pad name="A" x="-1.27" y="0" drill="0.8" shape="square"/>
+<pad name="K" x="1.27" y="0" drill="0.8"/>
+<text x="-2.05" y="-3.35" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
+</package>
+<package name="CHIPLED_0805">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
+<wire x1="0.5588" y1="0.2032" x2="0.5588" y2="-0.2032" width="0.2032" layer="51"/>
+<wire x1="-0.6096" y1="-0.2032" x2="-0.6096" y2="0.2032" width="0.2032" layer="51"/>
+<wire x1="-0.8636" y1="1.9304" x2="0.8636" y2="1.9304" width="0.2032" layer="21"/>
+<wire x1="0.8636" y1="1.9304" x2="0.8636" y2="-1.9304" width="0.2032" layer="21"/>
+<wire x1="0.8636" y1="-1.9304" x2="-0.8636" y2="-1.9304" width="0.2032" layer="21"/>
+<wire x1="-0.8636" y1="-1.9304" x2="-0.8636" y2="1.9304" width="0.2032" layer="21"/>
+<smd name="K" x="0" y="1.05" dx="1.2" dy="1.2" layer="1"/>
+<smd name="A" x="0" y="-1.05" dx="1.2" dy="1.2" layer="1"/>
+<text x="-1.1684" y="-1.5748" size="1.016" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="-0.9652" y1="1.8288" x2="0.9652" y2="2.4384" layer="21"/>
+</package>
+<package name="LG_M47K">
+<smd name="K" x="2" y="0" dx="1" dy="1.1" layer="1"/>
+<smd name="A" x="-2" y="0" dx="1" dy="1.1" layer="1"/>
+<text x="-2" y="1.5" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<hole x="0" y="0" drill="2.6924"/>
+</package>
+<package name="LED_2X5">
+<pad name="A" x="-1.27" y="0" drill="0.9" shape="square"/>
+<pad name="K" x="1.27" y="0" drill="0.9"/>
+<wire x1="-2.5" y1="1" x2="2.5" y2="1" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="1" x2="2.5" y2="-1" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="-1" x2="-2.5" y2="-1" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="-1" x2="-2.5" y2="1" width="0.2032" layer="21"/>
+<text x="-2.54" y="1.27" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<rectangle x1="-2.4892" y1="-0.9906" x2="-2.1082" y2="0.9906" layer="21"/>
+<rectangle x1="-0.4318" y1="-0.9906" x2="0" y2="0.9906" layer="21"/>
+<rectangle x1="-2.1844" y1="-0.9906" x2="-0.3556" y2="-0.8382" layer="21"/>
+<rectangle x1="-2.1336" y1="0.8382" x2="-0.381" y2="1.016" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LED">
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0" x2="-1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="1.27" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="1.397" x2="1.905" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="2.032" x2="1.905" y2="1.651" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="1.651" x2="2.54" y2="2.286" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.286" x2="2.54" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="2.159" y1="2.286" x2="2.54" y2="2.286" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="0.762" x2="2.159" y2="1.397" width="0.1524" layer="94"/>
+<wire x1="2.159" y1="1.397" x2="2.159" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="2.159" y1="1.016" x2="2.794" y2="1.651" width="0.1524" layer="94"/>
+<wire x1="2.794" y1="1.651" x2="2.794" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.413" y1="1.651" x2="2.794" y2="1.651" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="K" x="2.54" y="0" visible="off" length="point" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LED" prefix="D">
+<description>&lt;b&gt;Led&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-T1" package="LED_3MM">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COLOR" value="Green" constant="no"/>
+<attribute name="DESCRIPTION" value="{DESCRIPTION} T1 (3mm) - {ATTR:COLOR}"/>
+<attribute name="PACKAGE" value="T1"/>
+<attribute name="SKU" value="-" constant="no"/>
+<attribute name="VALUE" value="{ATTR:COLOR}"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805" package="CHIPLED_0805">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COLOR" value="Green" constant="no"/>
+<attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}"/>
+<attribute name="PACKAGE" value="SMT 0805"/>
+<attribute name="SKU" value="-" constant="no"/>
+<attribute name="VALUE" value="{ATTR:COLOR}"/>
+</technology>
+</technologies>
+</device>
+<device name="" package="LG_M47K">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2X5" package="LED_2X5">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COLOR" value="Green" constant="no"/>
+<attribute name="DESCRIPTION" value="{DESCRIPTION} 2x5mm - {ATTR:COLOR}"/>
+<attribute name="PACKAGE" value="2x5mm"/>
+<attribute name="SKU" value="-" constant="no"/>
+<attribute name="VALUE" value="{ATTR:COLOR}" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="APVD" value="B.F"/>
@@ -710,24 +964,12 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <part name="U1" library="IC" deviceset="MPR08*?" device="EJ" technology="4"/>
 <part name="GND1" library="Power" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="Power" deviceset="3.3V" device=""/>
-<part name="!ATTN" library="Misc" deviceset="WIRE" device="" value="2">
-<attribute name="NO_BOM" value="1"/>
-</part>
-<part name="!IRQ" library="Misc" deviceset="WIRE" device="" value="3">
-<attribute name="NO_BOM" value="1"/>
-</part>
-<part name="SDA" library="Misc" deviceset="WIRE" device="" value="5">
-<attribute name="NO_BOM" value="1"/>
-</part>
-<part name="SCL" library="Misc" deviceset="WIRE" device="" value="4">
-<attribute name="NO_BOM" value="1"/>
-</part>
-<part name="3.3V" library="Misc" deviceset="WIRE" device="" value="1">
-<attribute name="NO_BOM" value="1"/>
-</part>
-<part name="W6" library="Misc" deviceset="WIRE" device="" value="6">
-<attribute name="NO_BOM" value="1"/>
-</part>
+<part name="!ATTN" library="Misc" deviceset="WIRE" device="" value="2"/>
+<part name="!IRQ" library="Misc" deviceset="WIRE" device="" value="3"/>
+<part name="SDA" library="Misc" deviceset="WIRE" device="" value="5"/>
+<part name="SCL" library="Misc" deviceset="WIRE" device="" value="4"/>
+<part name="3.3V" library="Misc" deviceset="WIRE" device="" value="1"/>
+<part name="W6" library="Misc" deviceset="WIRE" device="" value="6"/>
 <part name="R1" library="Passive" deviceset="RES" device="-0603" value="780k">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
@@ -783,6 +1025,19 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <part name="CELL11" library="Symbols" deviceset="CELL_750" device="" value="I2C DATA"/>
 <part name="CELL12" library="Symbols" deviceset="CELL_750" device="" value="GND"/>
 <part name="PINOUT" library="Symbols" deviceset="CELL_1000" device="" value="PINOUT"/>
+<part name="D1" library="Optoelectronic" deviceset="LED" device="-0805" value="{ATTR:COLOR}"/>
+<part name="D2" library="Optoelectronic" deviceset="LED" device="-0805" value="{ATTR:COLOR}"/>
+<part name="D3" library="Optoelectronic" deviceset="LED" device="-0805" value="{ATTR:COLOR}"/>
+<part name="U2" library="IC" deviceset="PCA9533?" device="D" technology="/01"/>
+<part name="SUPPLY5" library="Power" deviceset="3.3V" device=""/>
+<part name="SUPPLY6" library="Power" deviceset="3.3V" device=""/>
+<part name="SUPPLY7" library="Power" deviceset="3.3V" device=""/>
+<part name="R11" library="Passive" deviceset="RES" device="-0603" value="56"/>
+<part name="R12" library="Passive" deviceset="RES" device="-0603" value="56"/>
+<part name="R13" library="Passive" deviceset="RES" device="-0603" value="56"/>
+<part name="GND3" library="Power" deviceset="GND" device=""/>
+<part name="SUPPLY8" library="Power" deviceset="3.3V" device=""/>
+<part name="C2" library="Passive" deviceset="CAP" device="-0603" value="100nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -793,24 +1048,12 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <instance part="U1" gate="G$1" x="167.64" y="132.08"/>
 <instance part="GND1" gate="GND" x="152.4" y="114.3"/>
 <instance part="SUPPLY1" gate="1.8V" x="152.4" y="162.56"/>
-<instance part="!ATTN" gate="G$1" x="107.95" y="139.7" rot="R180">
-<attribute name="NO_BOM" x="107.95" y="139.7" size="1.27" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="!IRQ" gate="G$1" x="107.95" y="137.16" rot="R180">
-<attribute name="NO_BOM" x="107.95" y="137.16" size="1.27" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="SDA" gate="G$1" x="107.95" y="132.08" rot="R180">
-<attribute name="NO_BOM" x="107.95" y="132.08" size="1.27" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="SCL" gate="G$1" x="107.95" y="129.54" rot="R180">
-<attribute name="NO_BOM" x="107.95" y="129.54" size="1.27" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="3.3V" gate="G$1" x="107.95" y="144.78" rot="R180">
-<attribute name="NO_BOM" x="107.95" y="144.78" size="1.27" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="W6" gate="G$1" x="107.95" y="121.92" rot="R180">
-<attribute name="NO_BOM" x="107.95" y="121.92" size="1.27" layer="96" rot="R180" display="off"/>
-</instance>
+<instance part="!ATTN" gate="G$1" x="107.95" y="139.7" rot="R180"/>
+<instance part="!IRQ" gate="G$1" x="107.95" y="137.16" rot="R180"/>
+<instance part="SDA" gate="G$1" x="107.95" y="132.08" rot="R180"/>
+<instance part="SCL" gate="G$1" x="107.95" y="129.54" rot="R180"/>
+<instance part="3.3V" gate="G$1" x="107.95" y="144.78" rot="R180"/>
+<instance part="W6" gate="G$1" x="107.95" y="121.92" rot="R180"/>
 <instance part="R1" gate="A" x="251.46" y="154.94" rot="R90"/>
 <instance part="R2" gate="A" x="231.14" y="154.94" rot="R90"/>
 <instance part="R3" gate="A" x="210.82" y="154.94" rot="R90"/>
@@ -839,6 +1082,20 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <instance part="CELL11" gate="G$1" x="12.7" y="241.3"/>
 <instance part="CELL12" gate="G$1" x="12.7" y="237.49"/>
 <instance part="PINOUT" gate="G$1" x="6.35" y="260.35"/>
+<instance part="D1" gate="G$1" x="200.66" y="99.06" rot="R270"/>
+<instance part="D2" gate="G$1" x="215.9" y="99.06" rot="R270"/>
+<instance part="D3" gate="G$1" x="231.14" y="99.06" rot="R270"/>
+<instance part="U2" gate="G$1" x="167.64" y="78.74"/>
+<instance part="SUPPLY5" gate="1.8V" x="200.66" y="106.68"/>
+<instance part="SUPPLY6" gate="1.8V" x="215.9" y="106.68"/>
+<instance part="SUPPLY7" gate="1.8V" x="231.14" y="106.68"/>
+<instance part="R11" gate="A" x="200.66" y="91.44" rot="R90"/>
+<instance part="R12" gate="A" x="215.9" y="91.44" rot="R90"/>
+<instance part="R13" gate="A" x="231.14" y="91.44" rot="R90"/>
+<instance part="U2" gate=":PW" x="144.78" y="48.26"/>
+<instance part="GND3" gate="GND" x="144.78" y="35.56"/>
+<instance part="SUPPLY8" gate="1.8V" x="144.78" y="60.96"/>
+<instance part="C2" gate="A" x="160.02" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -861,6 +1118,16 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <pinref part="GND2" gate="GND" pin="GND"/>
 <wire x1="144.78" y1="154.94" x2="142.24" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="154.94" x2="142.24" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate=":PW" pin="GND"/>
+<pinref part="GND3" gate="GND" pin="GND"/>
+<wire x1="144.78" y1="43.18" x2="144.78" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="C2" gate="A" pin="2"/>
+<wire x1="144.78" y1="40.64" x2="144.78" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="40.64" x2="160.02" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="40.64" x2="160.02" y2="45.72" width="0.1524" layer="91"/>
+<junction x="144.78" y="40.64"/>
 </segment>
 </net>
 <net name="E_MIN" class="0">
@@ -977,19 +1244,54 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <wire x1="129.54" y1="152.4" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="1.8V" pin="3.3V"/>
 </segment>
+<segment>
+<pinref part="SUPPLY5" gate="1.8V" pin="3.3V"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="200.66" y1="104.14" x2="200.66" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY6" gate="1.8V" pin="3.3V"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="215.9" y1="104.14" x2="215.9" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY7" gate="1.8V" pin="3.3V"/>
+<pinref part="D3" gate="G$1" pin="A"/>
+<wire x1="231.14" y1="104.14" x2="231.14" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY8" gate="1.8V" pin="3.3V"/>
+<pinref part="U2" gate=":PW" pin="VCC"/>
+<wire x1="144.78" y1="58.42" x2="144.78" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C2" gate="A" pin="1"/>
+<wire x1="144.78" y1="55.88" x2="144.78" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="55.88" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="55.88" x2="160.02" y2="50.8" width="0.1524" layer="91"/>
+<junction x="144.78" y="55.88"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SCL"/>
 <pinref part="SCL" gate="G$1" pin="P$1"/>
-<wire x1="154.94" y1="129.54" x2="110.49" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="129.54" x2="137.16" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="129.54" x2="110.49" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="129.54" x2="137.16" y2="78.74" width="0.1524" layer="91"/>
+<junction x="137.16" y="129.54"/>
+<pinref part="U2" gate="G$1" pin="SCL"/>
+<wire x1="137.16" y1="78.74" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="SDA" gate="G$1" pin="P$1"/>
 <pinref part="U1" gate="G$1" pin="SDA"/>
-<wire x1="110.49" y1="132.08" x2="154.94" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="110.49" y1="132.08" x2="139.7" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="SDA"/>
+<wire x1="139.7" y1="132.08" x2="154.94" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="81.28" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="81.28" x2="139.7" y2="132.08" width="0.1524" layer="91"/>
+<junction x="139.7" y="132.08"/>
 </segment>
 </net>
 <net name="!IRQ" class="0">
@@ -1045,6 +1347,51 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <pinref part="U1" gate="G$1" pin="E3"/>
 <wire x1="241.3" y1="127" x2="180.34" y2="127" width="0.1524" layer="91"/>
 <junction x="241.3" y="127"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R11" gate="A" pin="2"/>
+<pinref part="D1" gate="G$1" pin="K"/>
+<wire x1="200.66" y1="93.98" x2="200.66" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R12" gate="A" pin="2"/>
+<pinref part="D2" gate="G$1" pin="K"/>
+<wire x1="215.9" y1="93.98" x2="215.9" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R13" gate="A" pin="2"/>
+<pinref part="D3" gate="G$1" pin="K"/>
+<wire x1="231.14" y1="93.98" x2="231.14" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="LED0"/>
+<pinref part="R11" gate="A" pin="1"/>
+<wire x1="177.8" y1="83.82" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="83.82" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="LED1"/>
+<pinref part="R12" gate="A" pin="1"/>
+<wire x1="177.8" y1="81.28" x2="215.9" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="81.28" x2="215.9" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="LED2"/>
+<pinref part="R13" gate="A" pin="1"/>
+<wire x1="177.8" y1="78.74" x2="231.14" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="78.74" x2="231.14" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

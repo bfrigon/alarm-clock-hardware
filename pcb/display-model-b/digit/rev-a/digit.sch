@@ -1044,87 +1044,6 @@ I2C-bus&lt;/li&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="Connectors">
-<description>Connector library</description>
-<packages>
-<package name="534206-1">
-<description>&lt;b&gt;Conn. Receptacle 2 Pos Dual - .100 - Vertical&lt;/b&gt;
-&lt;p&gt;
-Tyco. # 534206-1
-&lt;/p&gt;</description>
-<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="2.54" width="0.1778" layer="21"/>
-<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.1778" layer="21"/>
-<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.1778" layer="21"/>
-<wire x1="1.27" y1="-2.54" x2="-1.27" y2="-2.54" width="0.1778" layer="21"/>
-<wire x1="-1.778" y1="3.048" x2="1.778" y2="3.048" width="0" layer="39"/>
-<wire x1="1.778" y1="3.048" x2="1.778" y2="-3.048" width="0" layer="39"/>
-<wire x1="1.778" y1="-3.048" x2="-1.778" y2="-3.048" width="0" layer="39"/>
-<wire x1="-1.778" y1="-3.048" x2="-1.778" y2="3.048" width="0" layer="39"/>
-<pad name="1" x="0" y="-1.27" drill="0.9" shape="square"/>
-<pad name="2" x="0" y="1.27" drill="0.9"/>
-<text x="-1.143" y="3.302" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
-</package>
-<package name="HDR100-EDGE-2">
-<smd name="2" x="0" y="0" dx="3.048" dy="1.27" layer="1" roundness="100" rot="R90"/>
-<smd name="1" x="0" y="0" dx="3.048" dy="1.27" layer="16" roundness="100" rot="R90"/>
-<wire x1="-0.889" y1="1.778" x2="0.889" y2="1.778" width="0.2032" layer="21"/>
-<wire x1="0.889" y1="1.778" x2="0.889" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="0.889" y1="-1.778" x2="0.889" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="0.889" y1="-1.905" x2="-0.889" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="-0.889" y1="-1.905" x2="-0.889" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-0.889" y1="-1.778" x2="-0.889" y2="1.778" width="0.2032" layer="21"/>
-<wire x1="-0.889" y1="1.778" x2="0.889" y2="1.778" width="0.2032" layer="22"/>
-<wire x1="0.889" y1="1.778" x2="0.889" y2="-1.778" width="0.2032" layer="22"/>
-<wire x1="0.889" y1="-1.778" x2="0.889" y2="-1.905" width="0.2032" layer="22"/>
-<wire x1="0.889" y1="-1.905" x2="-0.889" y2="-1.905" width="0.2032" layer="22"/>
-<wire x1="-0.889" y1="-1.905" x2="-0.889" y2="-1.778" width="0.2032" layer="22"/>
-<wire x1="-0.889" y1="-1.778" x2="-0.889" y2="1.778" width="0.2032" layer="22"/>
-<wire x1="-0.889" y1="-1.778" x2="0.889" y2="-1.778" width="0.2032" layer="22"/>
-<wire x1="-0.889" y1="-1.778" x2="0.889" y2="-1.778" width="0.2032" layer="21"/>
-<text x="-0.889" y="2.032" size="0.8128" layer="21" font="vector" ratio="12">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="HEADER_PIN">
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<pin name="S" x="-2.54" y="0" visible="off" length="short"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DL-100-HEADER-02" prefix="J">
-<description>&lt;b&gt;2 Pos - Dual Row - 2.54mm&lt;/b&gt;</description>
-<gates>
-<gate name="-1" symbol="HEADER_PIN" x="2.54" y="0" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="HEADER_PIN" x="15.24" y="0" addlevel="always" swaplevel="1"/>
-</gates>
-<devices>
-<device name="-V" package="534206-1">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="{DESCRIPTION} Receptacle - Vertical"/>
-<attribute name="MSG" value="Tyco Electronics"/>
-<attribute name="SKU" value="534206-1"/>
-</technology>
-</technologies>
-</device>
-<device name="-EDGE" package="HDR100-EDGE-2">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 <attribute name="DOC_ID" value="CLK-SCH-05"/>
@@ -1144,28 +1063,24 @@ Tyco. # 534206-1
 <part name="D1" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
 <attribute name="COLOR" value="Red"/>
 <attribute name="MFG" value="Kingbright"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
-<attribute name="SKU" value=""/>
+<attribute name="SKU" value="APT2012SECK/J3-PRV"/>
 </part>
 <part name="D2" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
 <attribute name="COLOR" value="Red"/>
 <attribute name="MFG" value="Kingbright"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
-<attribute name="SKU" value=""/>
+<attribute name="SKU" value="APT2012SECK/J3-PRV"/>
 </part>
 <part name="D3" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
 <attribute name="COLOR" value="Red"/>
 <attribute name="MFG" value="Kingbright"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
-<attribute name="SKU" value=""/>
+<attribute name="SKU" value="APT2012SECK/J3-PRV"/>
 </part>
 <part name="D4" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
 <attribute name="COLOR" value="Red"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}"/>
 <attribute name="MFG" value="Kingbright"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
-<attribute name="SKU" value=""/>
+<attribute name="SKU" value="APT2012SECK/J3-PRV"/>
 <attribute name="VALUE" value="{ATTR:COLOR}"/>
 </part>
 <part name="D5" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
@@ -1173,8 +1088,7 @@ Tyco. # 534206-1
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}"/>
 <attribute name="MFG" value="Kingbright"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
-<attribute name="SKU" value=""/>
+<attribute name="SKU" value="APT2012SECK/J3-PRV"/>
 <attribute name="VALUE" value="{ATTR:COLOR}"/>
 </part>
 <part name="D6" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
@@ -1182,41 +1096,35 @@ Tyco. # 534206-1
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}"/>
 <attribute name="MFG" value="Kingbright"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
-<attribute name="SKU" value=""/>
+<attribute name="SKU" value="APT2012SECK/J3-PRV"/>
 <attribute name="VALUE" value="{ATTR:COLOR}"/>
 </part>
 <part name="D7" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
 <attribute name="COLOR" value="Red"/>
 <attribute name="MFG" value="Kingbright"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
-<attribute name="SKU" value=""/>
+<attribute name="SKU" value="APT2012SECK/J3-PRV"/>
 </part>
 <part name="D8" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
 <attribute name="COLOR" value="Red"/>
 <attribute name="MFG" value="Kingbright"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
-<attribute name="SKU" value=""/>
+<attribute name="SKU" value="APT2012SECK/J3-PRV"/>
 </part>
 <part name="D9" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
 <attribute name="COLOR" value="Red"/>
 <attribute name="MFG" value="Kingbright"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
-<attribute name="SKU" value=""/>
+<attribute name="SKU" value="APT2012SECK/J3-PRV"/>
 </part>
 <part name="D10" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
 <attribute name="COLOR" value="Red"/>
 <attribute name="MFG" value="Kingbright"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
-<attribute name="SKU" value=""/>
+<attribute name="SKU" value="APT2012SECK/J3-PRV"/>
 </part>
 <part name="D11" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
 <attribute name="COLOR" value="Red"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}"/>
 <attribute name="MFG" value="Kingbright"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
-<attribute name="SKU" value=""/>
+<attribute name="SKU" value="APT2012SECK/J3-PRV"/>
 <attribute name="VALUE" value="{ATTR:COLOR}"/>
 </part>
 <part name="D12" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
@@ -1224,8 +1132,7 @@ Tyco. # 534206-1
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}"/>
 <attribute name="MFG" value="Kingbright"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
-<attribute name="SKU" value=""/>
+<attribute name="SKU" value="APT2012SECK/J3-PRV"/>
 <attribute name="VALUE" value="{ATTR:COLOR}"/>
 </part>
 <part name="D13" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
@@ -1233,8 +1140,7 @@ Tyco. # 534206-1
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}"/>
 <attribute name="MFG" value="Kingbright"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
-<attribute name="SKU" value=""/>
+<attribute name="SKU" value="APT2012SECK/J3-PRV"/>
 <attribute name="VALUE" value="{ATTR:COLOR}"/>
 </part>
 <part name="D14" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
@@ -1242,8 +1148,7 @@ Tyco. # 534206-1
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}"/>
 <attribute name="MFG" value="Kingbright"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
-<attribute name="SKU" value=""/>
+<attribute name="SKU" value="APT2012SECK/J3-PRV"/>
 <attribute name="VALUE" value="{ATTR:COLOR}"/>
 </part>
 <part name="Q1" library="Transistor" deviceset="MMBT3904" device=""/>
@@ -1340,10 +1245,17 @@ Tyco. # 534206-1
 <part name="SUPPLY16" library="Power" deviceset="3.3V" device=""/>
 <part name="SUPPLY19" library="Power" deviceset="3.3V" device=""/>
 <part name="GND10" library="Power" deviceset="GND" device=""/>
-<part name="J11" library="Misc" deviceset="SOLDER_JUMPER_3" device=""/>
-<part name="J10" library="Misc" deviceset="SOLDER_JUMPER_3" device=""/>
+<part name="J1" library="Misc" deviceset="SOLDER_JUMPER_3" device=""/>
+<part name="J2" library="Misc" deviceset="SOLDER_JUMPER_3" device=""/>
+<part name="J3" library="Misc" deviceset="SOLDER_JUMPER_3" device=""/>
 <part name="SUPPLY20" library="Power" deviceset="3.3V" device=""/>
+<part name="SUPPLY21" library="Power" deviceset="3.3V" device=""/>
+<part name="GND11" library="Power" deviceset="GND" device=""/>
 <part name="GND12" library="Power" deviceset="GND" device=""/>
+<part name="W1" library="Misc" deviceset="WIRE" device=""/>
+<part name="W2" library="Misc" deviceset="WIRE" device=""/>
+<part name="W3" library="Misc" deviceset="WIRE" device=""/>
+<part name="W4" library="Misc" deviceset="WIRE" device=""/>
 <part name="SUPPLY22" library="Power" deviceset="3.3V" device=""/>
 <part name="GND13" library="Power" deviceset="GND" device=""/>
 <part name="C1" library="Passive" deviceset="CAP" device="-0603" value="100nF"/>
@@ -1351,6 +1263,7 @@ Tyco. # 534206-1
 <part name="FRAME1" library="Symbols" deviceset="FRAME_ANSI_B" device=""/>
 <part name="CELL1" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="A0"/>
 <part name="CELL2" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="A1"/>
+<part name="CELL3" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="A2"/>
 <part name="CELL4" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="0"/>
 <part name="CELL5" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="0"/>
 <part name="CELL6" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="0"/>
@@ -1363,10 +1276,26 @@ Tyco. # 534206-1
 <part name="CELL13" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="0"/>
 <part name="CELL15" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
 <part name="CELL16" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL14" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL17" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="0"/>
+<part name="CELL18" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="0"/>
+<part name="CELL19" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL20" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="0"/>
+<part name="CELL21" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL22" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL23" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL24" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="0"/>
+<part name="CELL25" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL26" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL27" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
 <part name="CELL28" library="Symbols" deviceset="CELL_LEFT_750X75" device="" value="DIGIT 1"/>
 <part name="CELL29" library="Symbols" deviceset="CELL_LEFT_750X75" device="" value="DIGIT 2"/>
 <part name="CELL30" library="Symbols" deviceset="CELL_LEFT_750X75" device="" value="DIGIT 3"/>
 <part name="CELL31" library="Symbols" deviceset="CELL_LEFT_750X75" device="" value="DIGIT 4"/>
+<part name="CELL32" library="Symbols" deviceset="CELL_LEFT_750X75" device="" value="DIGIT 5"/>
+<part name="CELL33" library="Symbols" deviceset="CELL_LEFT_750X75" device="" value="DIGIT 6"/>
+<part name="CELL34" library="Symbols" deviceset="CELL_LEFT_750X75" device="" value="DIGIT 7"/>
+<part name="CELL35" library="Symbols" deviceset="CELL_LEFT_750X75" device="" value="DIGIT 8"/>
 <part name="CELL36" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
 <part name="CELL37" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="0"/>
 <part name="CELL38" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
@@ -1383,15 +1312,42 @@ Tyco. # 534206-1
 <part name="CELL54" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="0"/>
 <part name="CELL55" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
 <part name="CELL56" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL57" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL58" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="0"/>
+<part name="CELL59" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL60" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL61" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL62" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="0"/>
+<part name="CELL63" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL64" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL65" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL66" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="0"/>
+<part name="CELL67" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL68" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL69" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL70" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="0"/>
+<part name="CELL71" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
+<part name="CELL72" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="1"/>
 <part name="CELL74" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="R/W"/>
 <part name="U$4" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="X"/>
 <part name="U$5" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="X"/>
 <part name="U$6" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="X"/>
 <part name="U$7" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="X"/>
+<part name="U$8" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="X"/>
+<part name="U$9" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="X"/>
+<part name="U$10" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="X"/>
+<part name="U$11" library="Symbols" deviceset="CELL_CENTER_250X75" device="" value="X"/>
 <part name="U$12" library="Symbols" deviceset="CELL_CENTER_500X75" device="" value="0xD0"/>
 <part name="U$13" library="Symbols" deviceset="CELL_CENTER_500X75" device="" value="0xD2"/>
 <part name="U$14" library="Symbols" deviceset="CELL_CENTER_500X75" device="" value="0xD4"/>
 <part name="U$15" library="Symbols" deviceset="CELL_CENTER_500X75" device="" value="0xD6"/>
+<part name="U$16" library="Symbols" deviceset="CELL_CENTER_500X75" device="" value="0xD8"/>
+<part name="U$17" library="Symbols" deviceset="CELL_CENTER_500X75" device="" value="0xDA"/>
+<part name="U$18" library="Symbols" deviceset="CELL_CENTER_500X75" device="" value="0xDC"/>
+<part name="U$19" library="Symbols" deviceset="CELL_CENTER_500X75" device="" value="0xDE"/>
+<part name="R15" library="Passive" deviceset="RES" device="-0603" value="N/A"/>
+<part name="R16" library="Passive" deviceset="RES" device="-0603" value="N/A"/>
+<part name="SUPPLY8" library="Power" deviceset="3.3V" device=""/>
 <part name="R17" library="Passive" deviceset="RES" device="-0603" value="3k"/>
 <part name="R18" library="Passive" deviceset="RES" device="-0603" value="3k">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
@@ -1423,28 +1379,12 @@ Tyco. # 534206-1
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="W5" library="Misc" deviceset="WIRE" device="">
-<attribute name="BOM" value="False"/>
-</part>
-<part name="W6" library="Misc" deviceset="WIRE" device="">
-<attribute name="BOM" value="False"/>
-</part>
-<part name="SUPPLY8" library="Power" deviceset="3.3V" device=""/>
-<part name="R15" library="Passive" deviceset="RES" device="-0603" value="N/A"/>
-<part name="J1" library="Connectors" deviceset="DL-100-HEADER-02" device="-EDGE">
-<attribute name="MFG" value="Molex"/>
-<attribute name="PART_NO" value="3-644456-2"/>
-</part>
-<part name="J2" library="Connectors" deviceset="DL-100-HEADER-02" device="-EDGE">
-<attribute name="MFG" value="Molex"/>
-<attribute name="PART_NO" value="3-644456-2"/>
-</part>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="190.5" y="223.52" size="3.81" layer="97">SEGMENTS</text>
-<text x="243.84" y="134.62" size="3.81" layer="97">I2C ADDRESS SELECTION</text>
+<text x="251.46" y="134.62" size="3.81" layer="97">I2C ADDRESS SELECTION</text>
 <wire x1="368.3" y1="175.26" x2="378.46" y2="175.26" width="0.4064" layer="97"/>
 <wire x1="378.46" y1="175.26" x2="381.3175" y2="178.1175" width="0.4064" layer="97"/>
 <wire x1="381.3175" y1="178.1175" x2="376.555" y2="182.88" width="0.4064" layer="97"/>
@@ -1506,59 +1446,45 @@ Tyco. # 534206-1
 <instances>
 <instance part="D1" gate="G$1" x="147.32" y="208.28">
 <attribute name="MFG" x="147.32" y="208.28" size="1.27" layer="96" display="off"/>
-<attribute name="PART_NO" x="147.32" y="208.28" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="D2" gate="G$1" x="147.32" y="198.12">
 <attribute name="MFG" x="147.32" y="198.12" size="1.27" layer="96" display="off"/>
-<attribute name="PART_NO" x="147.32" y="198.12" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="D3" gate="G$1" x="101.6" y="208.28">
 <attribute name="MFG" x="101.6" y="208.28" size="1.27" layer="96" display="off"/>
-<attribute name="PART_NO" x="101.6" y="208.28" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="D4" gate="G$1" x="101.6" y="198.12">
 <attribute name="MFG" x="101.6" y="198.12" size="1.27" layer="96" display="off"/>
-<attribute name="PART_NO" x="101.6" y="198.12" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="D5" gate="G$1" x="55.88" y="208.28">
 <attribute name="MFG" x="55.88" y="208.28" size="1.27" layer="96" display="off"/>
-<attribute name="PART_NO" x="55.88" y="208.28" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="D6" gate="G$1" x="55.88" y="198.12">
 <attribute name="MFG" x="55.88" y="198.12" size="1.27" layer="96" display="off"/>
-<attribute name="PART_NO" x="55.88" y="198.12" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="D7" gate="G$1" x="284.48" y="208.28">
 <attribute name="MFG" x="284.48" y="208.28" size="1.27" layer="96" display="off"/>
-<attribute name="PART_NO" x="284.48" y="208.28" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="D8" gate="G$1" x="284.48" y="198.12">
 <attribute name="MFG" x="284.48" y="198.12" size="1.27" layer="96" display="off"/>
-<attribute name="PART_NO" x="284.48" y="198.12" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="D9" gate="G$1" x="238.76" y="208.28">
 <attribute name="MFG" x="238.76" y="208.28" size="1.27" layer="96" display="off"/>
-<attribute name="PART_NO" x="238.76" y="208.28" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="D10" gate="G$1" x="238.76" y="198.12">
 <attribute name="MFG" x="238.76" y="198.12" size="1.27" layer="96" display="off"/>
-<attribute name="PART_NO" x="238.76" y="198.12" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="D11" gate="G$1" x="193.04" y="208.28">
 <attribute name="MFG" x="193.04" y="208.28" size="1.27" layer="96" display="off"/>
-<attribute name="PART_NO" x="193.04" y="208.28" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="D12" gate="G$1" x="193.04" y="198.12">
 <attribute name="MFG" x="193.04" y="198.12" size="1.27" layer="96" display="off"/>
-<attribute name="PART_NO" x="193.04" y="198.12" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="D13" gate="G$1" x="330.2" y="208.28">
 <attribute name="MFG" x="330.2" y="208.28" size="1.27" layer="96" display="off"/>
-<attribute name="PART_NO" x="330.2" y="208.28" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="D14" gate="G$1" x="330.2" y="198.12">
 <attribute name="MFG" x="330.2" y="198.12" size="1.27" layer="96" display="off"/>
-<attribute name="PART_NO" x="330.2" y="198.12" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="Q1" gate="G$1" x="152.4" y="185.42"/>
 <instance part="Q2" gate="G$1" x="106.68" y="185.42"/>
@@ -1602,10 +1528,17 @@ Tyco. # 534206-1
 <instance part="SUPPLY16" gate="1.8V" x="116.84" y="132.08"/>
 <instance part="SUPPLY19" gate="1.8V" x="284.48" y="124.46"/>
 <instance part="GND10" gate="GND" x="284.48" y="99.06"/>
-<instance part="J11" gate="G$1" x="284.48" y="111.76" rot="MR270"/>
-<instance part="J10" gate="G$1" x="266.7" y="111.76" rot="MR270"/>
+<instance part="J1" gate="G$1" x="284.48" y="111.76" rot="MR270"/>
+<instance part="J2" gate="G$1" x="266.7" y="111.76" rot="MR270"/>
+<instance part="J3" gate="G$1" x="302.26" y="111.76" rot="MR270"/>
 <instance part="SUPPLY20" gate="1.8V" x="266.7" y="124.46"/>
+<instance part="SUPPLY21" gate="1.8V" x="302.26" y="124.46"/>
+<instance part="GND11" gate="GND" x="302.26" y="99.06"/>
 <instance part="GND12" gate="GND" x="266.7" y="99.06"/>
+<instance part="W1" gate="G$1" x="60.96" y="127"/>
+<instance part="W2" gate="G$1" x="60.96" y="119.38"/>
+<instance part="W3" gate="G$1" x="60.96" y="114.3"/>
+<instance part="W4" gate="G$1" x="60.96" y="109.22"/>
 <instance part="SUPPLY22" gate="1.8V" x="55.88" y="132.08"/>
 <instance part="GND13" gate="GND" x="55.88" y="104.14"/>
 <instance part="C1" gate="A" x="157.48" y="127" rot="R90"/>
@@ -1613,6 +1546,7 @@ Tyco. # 534206-1
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="CELL1" gate="G$1" x="375.92" y="99.06"/>
 <instance part="CELL2" gate="G$1" x="369.57" y="99.06"/>
+<instance part="CELL3" gate="G$1" x="363.22" y="99.06"/>
 <instance part="CELL4" gate="G$1" x="363.22" y="95.25"/>
 <instance part="CELL5" gate="G$1" x="369.57" y="95.25"/>
 <instance part="CELL6" gate="G$1" x="375.92" y="95.25"/>
@@ -1625,10 +1559,26 @@ Tyco. # 534206-1
 <instance part="CELL13" gate="G$1" x="363.22" y="83.82"/>
 <instance part="CELL15" gate="G$1" x="375.92" y="83.82"/>
 <instance part="CELL16" gate="G$1" x="369.57" y="83.82"/>
+<instance part="CELL14" gate="G$1" x="363.22" y="80.01"/>
+<instance part="CELL17" gate="G$1" x="369.57" y="80.01"/>
+<instance part="CELL18" gate="G$1" x="375.92" y="80.01"/>
+<instance part="CELL19" gate="G$1" x="363.22" y="76.2"/>
+<instance part="CELL20" gate="G$1" x="369.57" y="76.2"/>
+<instance part="CELL21" gate="G$1" x="375.92" y="76.2"/>
+<instance part="CELL22" gate="G$1" x="363.22" y="72.39"/>
+<instance part="CELL23" gate="G$1" x="369.57" y="72.39"/>
+<instance part="CELL24" gate="G$1" x="375.92" y="72.39"/>
+<instance part="CELL25" gate="G$1" x="363.22" y="68.58"/>
+<instance part="CELL26" gate="G$1" x="369.57" y="68.58"/>
+<instance part="CELL27" gate="G$1" x="375.92" y="68.58"/>
 <instance part="CELL28" gate="G$1" x="388.62" y="95.25"/>
 <instance part="CELL29" gate="G$1" x="388.62" y="91.44"/>
 <instance part="CELL30" gate="G$1" x="388.62" y="87.63"/>
 <instance part="CELL31" gate="G$1" x="388.62" y="83.82"/>
+<instance part="CELL32" gate="G$1" x="388.62" y="80.01"/>
+<instance part="CELL33" gate="G$1" x="388.62" y="76.2"/>
+<instance part="CELL34" gate="G$1" x="388.62" y="72.39"/>
+<instance part="CELL35" gate="G$1" x="388.62" y="68.58"/>
 <instance part="CELL36" gate="G$1" x="356.87" y="95.25"/>
 <instance part="CELL37" gate="G$1" x="350.52" y="95.25"/>
 <instance part="CELL38" gate="G$1" x="344.17" y="95.25"/>
@@ -1645,15 +1595,42 @@ Tyco. # 534206-1
 <instance part="CELL54" gate="G$1" x="350.52" y="83.82"/>
 <instance part="CELL55" gate="G$1" x="344.17" y="83.82"/>
 <instance part="CELL56" gate="G$1" x="337.82" y="83.82"/>
+<instance part="CELL57" gate="G$1" x="356.87" y="80.01"/>
+<instance part="CELL58" gate="G$1" x="350.52" y="80.01"/>
+<instance part="CELL59" gate="G$1" x="344.17" y="80.01"/>
+<instance part="CELL60" gate="G$1" x="337.82" y="80.01"/>
+<instance part="CELL61" gate="G$1" x="356.87" y="76.2"/>
+<instance part="CELL62" gate="G$1" x="350.52" y="76.2"/>
+<instance part="CELL63" gate="G$1" x="344.17" y="76.2"/>
+<instance part="CELL64" gate="G$1" x="337.82" y="76.2"/>
+<instance part="CELL65" gate="G$1" x="356.87" y="72.39"/>
+<instance part="CELL66" gate="G$1" x="350.52" y="72.39"/>
+<instance part="CELL67" gate="G$1" x="344.17" y="72.39"/>
+<instance part="CELL68" gate="G$1" x="337.82" y="72.39"/>
+<instance part="CELL69" gate="G$1" x="356.87" y="68.58"/>
+<instance part="CELL70" gate="G$1" x="350.52" y="68.58"/>
+<instance part="CELL71" gate="G$1" x="344.17" y="68.58"/>
+<instance part="CELL72" gate="G$1" x="337.82" y="68.58"/>
 <instance part="CELL74" gate="G$1" x="382.27" y="99.06"/>
 <instance part="U$4" gate="G$1" x="382.27" y="95.25"/>
 <instance part="U$5" gate="G$1" x="382.27" y="91.44"/>
 <instance part="U$6" gate="G$1" x="382.27" y="87.63"/>
 <instance part="U$7" gate="G$1" x="382.27" y="83.82"/>
+<instance part="U$8" gate="G$1" x="382.27" y="80.01"/>
+<instance part="U$9" gate="G$1" x="382.27" y="76.2"/>
+<instance part="U$10" gate="G$1" x="382.27" y="72.39"/>
+<instance part="U$11" gate="G$1" x="382.27" y="68.58"/>
 <instance part="U$12" gate="G$1" x="325.12" y="95.25"/>
 <instance part="U$13" gate="G$1" x="325.12" y="91.44"/>
 <instance part="U$14" gate="G$1" x="325.12" y="87.63"/>
 <instance part="U$15" gate="G$1" x="325.12" y="83.82"/>
+<instance part="U$16" gate="G$1" x="325.12" y="80.01"/>
+<instance part="U$17" gate="G$1" x="325.12" y="76.2"/>
+<instance part="U$18" gate="G$1" x="325.12" y="72.39"/>
+<instance part="U$19" gate="G$1" x="325.12" y="68.58"/>
+<instance part="R15" gate="A" x="99.06" y="132.08" rot="R90"/>
+<instance part="R16" gate="A" x="109.22" y="132.08" rot="R90"/>
+<instance part="SUPPLY8" gate="1.8V" x="104.14" y="142.24"/>
 <instance part="R17" gate="A" x="144.78" y="185.42"/>
 <instance part="R18" gate="A" x="99.06" y="185.42"/>
 <instance part="R19" gate="A" x="53.34" y="185.42"/>
@@ -1661,20 +1638,6 @@ Tyco. # 534206-1
 <instance part="R21" gate="A" x="236.22" y="185.42"/>
 <instance part="R22" gate="A" x="281.94" y="185.42"/>
 <instance part="R23" gate="A" x="327.66" y="185.42"/>
-<instance part="W5" gate="G$1" x="63.5" y="60.96"/>
-<instance part="W6" gate="G$1" x="63.5" y="66.04"/>
-<instance part="SUPPLY8" gate="1.8V" x="58.42" y="81.28"/>
-<instance part="R15" gate="A" x="58.42" y="73.66" rot="R90"/>
-<instance part="J1" gate="-1" x="73.66" y="114.3"/>
-<instance part="J1" gate="-2" x="73.66" y="119.38">
-<attribute name="MFG" x="73.66" y="119.38" size="1.27" layer="96" display="off"/>
-<attribute name="PART_NO" x="73.66" y="119.38" size="1.27" layer="96" display="off"/>
-</instance>
-<instance part="J2" gate="-1" x="73.66" y="109.22"/>
-<instance part="J2" gate="-2" x="73.66" y="124.46">
-<attribute name="PART_NO" x="73.66" y="124.46" size="1.27" layer="96" display="off"/>
-<attribute name="MFG" x="73.66" y="124.46" size="1.27" layer="96" display="off"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -1724,10 +1687,6 @@ Tyco. # 534206-1
 <wire x1="121.92" y1="106.68" x2="119.38" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="106.68" x2="119.38" y2="96.52" width="0.1524" layer="91"/>
 <junction x="119.38" y="96.52"/>
-<wire x1="119.38" y1="106.68" x2="119.38" y2="111.76" width="0.1524" layer="91"/>
-<junction x="119.38" y="106.68"/>
-<pinref part="U1" gate="G$1" pin="A2"/>
-<wire x1="119.38" y1="111.76" x2="121.92" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VSS"/>
@@ -1736,20 +1695,25 @@ Tyco. # 534206-1
 <wire x1="149.86" y1="96.52" x2="149.86" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="J3" gate="G$1" pin="3"/>
+<pinref part="GND11" gate="GND" pin="GND"/>
+<wire x1="302.26" y1="101.6" x2="302.26" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="GND10" gate="GND" pin="GND"/>
-<pinref part="J11" gate="G$1" pin="3"/>
+<pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="284.48" y1="109.22" x2="284.48" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J10" gate="G$1" pin="3"/>
+<pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="266.7" y1="109.22" x2="266.7" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="GND" pin="GND"/>
 </segment>
 <segment>
+<pinref part="W4" gate="G$1" pin="P$1"/>
+<wire x1="58.42" y1="109.22" x2="55.88" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="GND" pin="GND"/>
 <wire x1="55.88" y1="109.22" x2="55.88" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="J2" gate="-1" pin="S"/>
-<wire x1="55.88" y1="109.22" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="A" pin="2"/>
@@ -1933,24 +1897,35 @@ Tyco. # 534206-1
 </segment>
 <segment>
 <pinref part="SUPPLY20" gate="1.8V" pin="3.3V"/>
-<pinref part="J10" gate="G$1" pin="1"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="266.7" y1="114.3" x2="266.7" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY19" gate="1.8V" pin="3.3V"/>
-<pinref part="J11" gate="G$1" pin="1"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="284.48" y1="114.3" x2="284.48" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SUPPLY22" gate="1.8V" pin="3.3V"/>
-<wire x1="55.88" y1="124.46" x2="55.88" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="124.46" x2="71.12" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="J2" gate="-2" pin="S"/>
+<pinref part="J3" gate="G$1" pin="1"/>
+<pinref part="SUPPLY21" gate="1.8V" pin="3.3V"/>
+<wire x1="302.26" y1="114.3" x2="302.26" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R15" gate="A" pin="2"/>
+<pinref part="W1" gate="G$1" pin="P$1"/>
+<wire x1="58.42" y1="127" x2="55.88" y2="127" width="0.1524" layer="91"/>
+<pinref part="SUPPLY22" gate="1.8V" pin="3.3V"/>
+<wire x1="55.88" y1="127" x2="55.88" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="SUPPLY8" gate="1.8V" pin="3.3V"/>
-<wire x1="58.42" y1="76.2" x2="58.42" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="139.7" x2="104.14" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="R16" gate="A" pin="2"/>
+<wire x1="104.14" y1="137.16" x2="109.22" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="137.16" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="R15" gate="A" pin="2"/>
+<wire x1="104.14" y1="137.16" x2="99.06" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="137.16" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
+<junction x="104.14" y="137.16"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2143,26 +2118,34 @@ Tyco. # 534206-1
 </net>
 <net name="SDA" class="0">
 <segment>
-<wire x1="121.92" y1="124.46" x2="109.22" y2="124.46" width="0.1524" layer="91"/>
-<label x="109.22" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="121.92" y1="124.46" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
+<label x="96.52" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="SDA"/>
+<pinref part="R15" gate="A" pin="1"/>
+<wire x1="99.06" y1="124.46" x2="96.52" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="129.54" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
+<junction x="99.06" y="124.46"/>
 </segment>
 <segment>
+<pinref part="W2" gate="G$1" pin="P$1"/>
+<wire x1="58.42" y1="119.38" x2="55.88" y2="119.38" width="0.1524" layer="91"/>
 <label x="55.88" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="-2" pin="S"/>
-<wire x1="55.88" y1="119.38" x2="71.12" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
-<label x="109.22" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="SCL"/>
+<label x="96.52" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="121.92" y1="121.92" x2="109.22" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="SCL"/>
+<pinref part="R16" gate="A" pin="1"/>
+<wire x1="109.22" y1="121.92" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="129.54" x2="109.22" y2="121.92" width="0.1524" layer="91"/>
+<junction x="109.22" y="121.92"/>
 </segment>
 <segment>
+<pinref part="W3" gate="G$1" pin="P$1"/>
+<wire x1="58.42" y1="114.3" x2="55.88" y2="114.3" width="0.1524" layer="91"/>
 <label x="55.88" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="-1" pin="S"/>
-<wire x1="71.12" y1="114.3" x2="55.88" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -2172,7 +2155,7 @@ Tyco. # 534206-1
 <label x="111.76" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J10" gate="G$1" pin="2"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="264.16" y1="111.76" x2="261.62" y2="111.76" width="0.1524" layer="91"/>
 <label x="261.62" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -2184,9 +2167,21 @@ Tyco. # 534206-1
 <label x="111.76" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J11" gate="G$1" pin="2"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="281.94" y1="111.76" x2="279.4" y2="111.76" width="0.1524" layer="91"/>
 <label x="279.4" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="A2" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="A2"/>
+<wire x1="121.92" y1="111.76" x2="111.76" y2="111.76" width="0.1524" layer="91"/>
+<label x="111.76" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="299.72" y1="111.76" x2="294.64" y2="111.76" width="0.1524" layer="91"/>
+<label x="294.64" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2236,26 +2231,6 @@ Tyco. # 534206-1
 <pinref part="Q7" gate="G$1" pin="B"/>
 <pinref part="R23" gate="A" pin="2"/>
 <wire x1="332.74" y1="185.42" x2="330.2" y2="185.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="EXT" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="LED0"/>
-<wire x1="147.32" y1="119.38" x2="154.94" y2="119.38" width="0.1524" layer="91"/>
-<label x="154.94" y="119.38" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="W5" gate="G$1" pin="P$1"/>
-<wire x1="60.96" y1="60.96" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
-<label x="55.88" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="W6" gate="G$1" pin="P$1"/>
-<wire x1="60.96" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="R15" gate="A" pin="1"/>
-<wire x1="58.42" y1="66.04" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
