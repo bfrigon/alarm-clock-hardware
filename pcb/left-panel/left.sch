@@ -296,7 +296,8 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="B3F-315X" prefix="SW">
+<deviceset name="B3F-315?" prefix="SW">
+<description>Tactile switch - 6mm - Vertical</description>
 <gates>
 <gate name="G$1" symbol="SPST_SHIELD" x="0" y="0"/>
 </gates>
@@ -309,7 +310,15 @@
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="0">
+<attribute name="MFG" value="Omron"/>
+</technology>
+<technology name="2">
+<attribute name="MFG" value="Omron"/>
+</technology>
+<technology name="5">
+<attribute name="MFG" value="Omron"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -464,14 +473,14 @@
 </classes>
 <parts>
 <part name="FRAME1" library="Symbols" deviceset="FRAME_ANSI_B" device=""/>
-<part name="SW1" library="Switch" deviceset="B3F-315X" device="">
+<part name="SW1" library="Switch" deviceset="B3F-315?" device="" technology="0">
 <attribute name="PRICE" value="0.21"/>
 </part>
-<part name="SW2" library="Switch" deviceset="B3F-315X" device="">
+<part name="SW2" library="Switch" deviceset="B3F-315?" device="" technology="0">
 <attribute name="PRICE" value="0.21"/>
 <attribute name="TEST" value="test"/>
 </part>
-<part name="SW3" library="Switch" deviceset="B3F-315X" device="">
+<part name="SW3" library="Switch" deviceset="B3F-315?" device="" technology="0">
 <attribute name="PRICE" value="0.21"/>
 </part>
 <part name="GND1" library="Power" deviceset="GND" device=""/>

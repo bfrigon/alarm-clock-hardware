@@ -1,0 +1,19 @@
+Power requirements :
+====================
+
+
+Description         5V          3.3V
+=============================================
+USB A (external)    500 mA      --
+USB B               500 mA      --
+Addon module        --          250 mA
+Display             --          1250 mA
+CPU                 --          400 mA
+DAC                 50 mA       --
+Amplifier           400 mA      --
+Touch keypad        --          65 mA
+----------------------------------------------
+Total               1450 mA     1950mA
+
+----------------------------------------------
++~25% overhead      1800 mA     2500mA     

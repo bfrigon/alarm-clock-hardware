@@ -602,10 +602,13 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 </classes>
 <parts>
 <part name="FRAME1" library="Symbols" deviceset="FRAME_ANSI_B" device=""/>
-<part name="D1" library="Optoelectronic" deviceset="LED" device="-0805" value="{ATTR:COLOR}"/>
+<part name="D1" library="Optoelectronic" deviceset="LED" device="-0805" value="{ATTR:COLOR}">
+<attribute name="COLOR" value="Orange"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV"/>
+</part>
 <part name="W1" library="Misc" deviceset="WIRE" device=""/>
 <part name="W2" library="Misc" deviceset="WIRE" device=""/>
-<part name="R1" library="Passive" deviceset="RES" device="-0603" value="56"/>
+<part name="R1" library="Passive" deviceset="RES" device="-0603" value="82"/>
 </parts>
 <sheets>
 <sheet>
@@ -614,9 +617,11 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="D1" gate="G$1" x="198.12" y="137.16"/>
-<instance part="W1" gate="G$1" x="185.42" y="147.32" rot="R90"/>
-<instance part="W2" gate="G$1" x="205.74" y="147.32" rot="R90"/>
+<instance part="D1" gate="G$1" x="198.12" y="137.16">
+<attribute name="PART_NO" x="198.12" y="137.16" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="W1" gate="G$1" x="182.88" y="144.78" rot="R90"/>
+<instance part="W2" gate="G$1" x="205.74" y="144.78" rot="R90"/>
 <instance part="R1" gate="A" x="190.5" y="137.16"/>
 </instances>
 <busses>
@@ -625,13 +630,12 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <net name="VCC" class="0">
 <segment>
 <pinref part="W1" gate="G$1" pin="P$1"/>
-<wire x1="185.42" y1="144.78" x2="185.42" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="142.24" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="R1" gate="A" pin="1"/>
-<wire x1="185.42" y1="142.24" x2="185.42" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="137.16" x2="185.42" y2="137.16" width="0.1524" layer="91"/>
-<label x="182.88" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="182.88" y1="142.24" x2="185.42" y2="142.24" width="0.1524" layer="91"/>
-<junction x="185.42" y="142.24"/>
+<wire x1="187.96" y1="137.16" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
+<label x="180.34" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="180.34" y1="137.16" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
+<junction x="182.88" y="137.16"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -646,11 +650,10 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <pinref part="D1" gate="G$1" pin="K"/>
 <wire x1="200.66" y1="137.16" x2="205.74" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="W2" gate="G$1" pin="P$1"/>
+<label x="208.28" y="137.16" size="1.27" layer="95" xref="yes"/>
 <wire x1="205.74" y1="137.16" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
-<label x="208.28" y="142.24" size="1.27" layer="95" xref="yes"/>
-<wire x1="205.74" y1="142.24" x2="205.74" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="142.24" x2="208.28" y2="142.24" width="0.1524" layer="91"/>
-<junction x="205.74" y="142.24"/>
+<wire x1="205.74" y1="137.16" x2="208.28" y2="137.16" width="0.1524" layer="91"/>
+<junction x="205.74" y="137.16"/>
 </segment>
 </net>
 </nets>

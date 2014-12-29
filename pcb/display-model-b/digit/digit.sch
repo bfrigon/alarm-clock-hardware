@@ -1129,7 +1129,7 @@ Tyco. # 534206-1
 <attributes>
 <attribute name="DOC_ID" value="CLK-SCH-05"/>
 <attribute name="DOC_PART_NO" value="CLK-PC-05"/>
-<attribute name="DOC_REV" value="A"/>
+<attribute name="DOC_REV" value="B"/>
 <attribute name="DOC_SUBTITLE" value=" "/>
 <attribute name="DOC_TITLE" value="7 Segment display"/>
 <attribute name="PROJECT_NAME" value="Alarm Clock (Model B)"/>
@@ -1141,108 +1141,108 @@ Tyco. # 534206-1
 </class>
 </classes>
 <parts>
-<part name="D1" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
-<attribute name="COLOR" value="Red"/>
+<part name="D1" library="Optoelectronic" deviceset="LED" device="-0805" value="Orange">
+<attribute name="COLOR" value="Orange"/>
 <attribute name="MFG" value="Kingbright"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV"/>
 <attribute name="SKU" value=""/>
 </part>
-<part name="D2" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
-<attribute name="COLOR" value="Red"/>
+<part name="D2" library="Optoelectronic" deviceset="LED" device="-0805" value="Orange">
+<attribute name="COLOR" value="Orange"/>
 <attribute name="MFG" value="Kingbright"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV"/>
 <attribute name="SKU" value=""/>
 </part>
-<part name="D3" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
-<attribute name="COLOR" value="Red"/>
+<part name="D3" library="Optoelectronic" deviceset="LED" device="-0805" value="Orange">
+<attribute name="COLOR" value="Orange"/>
 <attribute name="MFG" value="Kingbright"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV"/>
 <attribute name="SKU" value=""/>
 </part>
-<part name="D4" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
-<attribute name="COLOR" value="Red"/>
+<part name="D4" library="Optoelectronic" deviceset="LED" device="-0805" value="Orange">
+<attribute name="COLOR" value="Orange"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}"/>
 <attribute name="MFG" value="Kingbright"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV"/>
 <attribute name="SKU" value=""/>
 <attribute name="VALUE" value="{ATTR:COLOR}"/>
 </part>
 <part name="D5" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
-<attribute name="COLOR" value="Red"/>
+<attribute name="COLOR" value="Orange"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}"/>
 <attribute name="MFG" value="Kingbright"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV"/>
 <attribute name="SKU" value=""/>
 <attribute name="VALUE" value="{ATTR:COLOR}"/>
 </part>
-<part name="D6" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
-<attribute name="COLOR" value="Red"/>
+<part name="D6" library="Optoelectronic" deviceset="LED" device="-0805" value="orange">
+<attribute name="COLOR" value="Orange"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}"/>
 <attribute name="MFG" value="Kingbright"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV"/>
 <attribute name="SKU" value=""/>
 <attribute name="VALUE" value="{ATTR:COLOR}"/>
 </part>
-<part name="D7" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
-<attribute name="COLOR" value="Red"/>
+<part name="D7" library="Optoelectronic" deviceset="LED" device="-0805" value="Orange">
+<attribute name="COLOR" value="Orange"/>
 <attribute name="MFG" value="Kingbright"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV"/>
 <attribute name="SKU" value=""/>
 </part>
-<part name="D8" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
-<attribute name="COLOR" value="Red"/>
+<part name="D8" library="Optoelectronic" deviceset="LED" device="-0805" value="Orange">
+<attribute name="COLOR" value="Orange"/>
 <attribute name="MFG" value="Kingbright"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV"/>
 <attribute name="SKU" value=""/>
 </part>
-<part name="D9" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
-<attribute name="COLOR" value="Red"/>
+<part name="D9" library="Optoelectronic" deviceset="LED" device="-0805" value="Orange">
+<attribute name="COLOR" value="Orange"/>
 <attribute name="MFG" value="Kingbright"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV"/>
 <attribute name="SKU" value=""/>
 </part>
-<part name="D10" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
-<attribute name="COLOR" value="Red"/>
+<part name="D10" library="Optoelectronic" deviceset="LED" device="-0805" value="Orange">
+<attribute name="COLOR" value="Orange"/>
 <attribute name="MFG" value="Kingbright"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV"/>
 <attribute name="SKU" value=""/>
 </part>
-<part name="D11" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
-<attribute name="COLOR" value="Red"/>
+<part name="D11" library="Optoelectronic" deviceset="LED" device="-0805" value="Orange">
+<attribute name="COLOR" value="Orange"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}"/>
 <attribute name="MFG" value="Kingbright"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV"/>
 <attribute name="SKU" value=""/>
 <attribute name="VALUE" value="{ATTR:COLOR}"/>
 </part>
-<part name="D12" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
-<attribute name="COLOR" value="Red"/>
+<part name="D12" library="Optoelectronic" deviceset="LED" device="-0805" value="Orange">
+<attribute name="COLOR" value="Orange"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}"/>
 <attribute name="MFG" value="Kingbright"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV"/>
 <attribute name="SKU" value=""/>
 <attribute name="VALUE" value="{ATTR:COLOR}"/>
 </part>
-<part name="D13" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
-<attribute name="COLOR" value="Red"/>
+<part name="D13" library="Optoelectronic" deviceset="LED" device="-0805" value="Orange">
+<attribute name="COLOR" value="Orange"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}"/>
 <attribute name="MFG" value="Kingbright"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV"/>
 <attribute name="SKU" value=""/>
 <attribute name="VALUE" value="{ATTR:COLOR}"/>
 </part>
-<part name="D14" library="Optoelectronic" deviceset="LED" device="-0805" value="Red">
-<attribute name="COLOR" value="Red"/>
+<part name="D14" library="Optoelectronic" deviceset="LED" device="-0805" value="Orange">
+<attribute name="COLOR" value="Orange"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}"/>
 <attribute name="MFG" value="Kingbright"/>
 <attribute name="PACKAGE" value="SMT 0805"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV"/>
 <attribute name="SKU" value=""/>
 <attribute name="VALUE" value="{ATTR:COLOR}"/>
 </part>
@@ -1263,68 +1263,68 @@ Tyco. # 534206-1
 <part name="GND5" library="Power" deviceset="GND" device=""/>
 <part name="GND6" library="Power" deviceset="GND" device=""/>
 <part name="GND7" library="Power" deviceset="GND" device=""/>
-<part name="R1" library="Passive" deviceset="RES" device="-0603" value="56"/>
-<part name="R2" library="Passive" deviceset="RES" device="-0603" value="56">
+<part name="R1" library="Passive" deviceset="RES" device="-0603" value="82"/>
+<part name="R2" library="Passive" deviceset="RES" device="-0603" value="82">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R3" library="Passive" deviceset="RES" device="-0603" value="56">
+<part name="R3" library="Passive" deviceset="RES" device="-0603" value="82">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R4" library="Passive" deviceset="RES" device="-0603" value="56">
+<part name="R4" library="Passive" deviceset="RES" device="-0603" value="82">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R5" library="Passive" deviceset="RES" device="-0603" value="56">
+<part name="R5" library="Passive" deviceset="RES" device="-0603" value="82">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R6" library="Passive" deviceset="RES" device="-0603" value="56">
+<part name="R6" library="Passive" deviceset="RES" device="-0603" value="82">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R7" library="Passive" deviceset="RES" device="-0603" value="56">
+<part name="R7" library="Passive" deviceset="RES" device="-0603" value="82">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R8" library="Passive" deviceset="RES" device="-0603" value="56">
+<part name="R8" library="Passive" deviceset="RES" device="-0603" value="82">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R9" library="Passive" deviceset="RES" device="-0603" value="56">
+<part name="R9" library="Passive" deviceset="RES" device="-0603" value="82">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R10" library="Passive" deviceset="RES" device="-0603" value="56">
+<part name="R10" library="Passive" deviceset="RES" device="-0603" value="82">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R11" library="Passive" deviceset="RES" device="-0603" value="56">
+<part name="R11" library="Passive" deviceset="RES" device="-0603" value="82">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R12" library="Passive" deviceset="RES" device="-0603" value="56">
+<part name="R12" library="Passive" deviceset="RES" device="-0603" value="82">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R13" library="Passive" deviceset="RES" device="-0603" value="56">
+<part name="R13" library="Passive" deviceset="RES" device="-0603" value="82">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
 </part>
-<part name="R14" library="Passive" deviceset="RES" device="-0603" value="56">
+<part name="R14" library="Passive" deviceset="RES" device="-0603" value="82">
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}"/>
 <attribute name="PACKAGE" value="SMT 0603"/>
 <attribute name="PART" value=""/>
@@ -1531,10 +1531,12 @@ Tyco. # 534206-1
 <instance part="D7" gate="G$1" x="284.48" y="208.28">
 <attribute name="MFG" x="284.48" y="208.28" size="1.27" layer="96" display="off"/>
 <attribute name="PART_NO" x="284.48" y="208.28" size="1.27" layer="96" display="off"/>
+<attribute name="COLOR" x="129.54" y="238.76" size="1.27" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="D8" gate="G$1" x="284.48" y="198.12">
 <attribute name="MFG" x="284.48" y="198.12" size="1.27" layer="96" display="off"/>
 <attribute name="PART_NO" x="284.48" y="198.12" size="1.27" layer="96" display="off"/>
+<attribute name="COLOR" x="261.62" y="203.2" size="1.27" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="D9" gate="G$1" x="238.76" y="208.28">
 <attribute name="MFG" x="238.76" y="208.28" size="1.27" layer="96" display="off"/>

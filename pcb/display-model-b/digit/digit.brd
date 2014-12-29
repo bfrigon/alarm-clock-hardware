@@ -8,7 +8,7 @@
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -52,13 +52,13 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -85,7 +85,7 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="Segments" color="12" fill="1" visible="no" active="yes"/>
-<layer number="114" name="segment_outline" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="segment_outline" color="12" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="14" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="5" fill="1" visible="no" active="yes"/>
@@ -1293,130 +1293,131 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="D1" library="Optoelectronic" package="CHIPLED_0805" value="Red" x="20.32" y="8.89" smashed="yes" rot="R270">
+<element name="D1" library="Optoelectronic" package="CHIPLED_0805" value="Orange" x="20.32" y="8.89" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="SMT 0805" x="20.32" y="8.89" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}" x="20.32" y="8.89" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="SKU" value="" x="20.32" y="8.89" size="1.27" layer="27" rot="R270" display="off"/>
-<attribute name="COLOR" value="Red" x="20.32" y="8.89" size="1.27" layer="27" rot="R270" display="off"/>
+<attribute name="COLOR" value="Orange" x="20.32" y="8.89" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="MFG" value="Kingbright" x="20.32" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="21.5392" y="7.0104" size="0.8128" layer="25" font="vector" ratio="10"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV" x="20.32" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV" x="20.32" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="D2" library="Optoelectronic" package="CHIPLED_0805" value="Red" x="20.32" y="13.97" smashed="yes" rot="R90">
+<element name="D2" library="Optoelectronic" package="CHIPLED_0805" value="Orange" x="20.32" y="13.97" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="SMT 0805" x="20.32" y="13.97" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}" x="20.32" y="13.97" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="SKU" value="" x="20.32" y="13.97" size="1.27" layer="27" rot="R90" display="off"/>
-<attribute name="COLOR" value="Red" x="20.32" y="13.97" size="1.27" layer="27" rot="R90" display="off"/>
+<attribute name="COLOR" value="Orange" x="20.32" y="13.97" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="MFG" value="Kingbright" x="20.32" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="20.9042" y="15.1384" size="0.8128" layer="25" font="vector" ratio="10"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV" x="20.32" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV" x="20.32" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="D3" library="Optoelectronic" package="CHIPLED_0805" value="Red" x="20.32" y="24.13" smashed="yes" rot="R270">
+<element name="D3" library="Optoelectronic" package="CHIPLED_0805" value="Orange" x="20.32" y="24.13" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="SMT 0805" x="20.32" y="24.13" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}" x="20.32" y="24.13" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="SKU" value="" x="20.32" y="24.13" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="MFG" value="Kingbright" x="20.32" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="18.8722" y="22.2504" size="0.8128" layer="25" font="vector" ratio="10"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV" x="20.32" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV" x="20.32" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="COLOR" value="Orange" x="20.32" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="D4" library="Optoelectronic" package="CHIPLED_0805" value="Red" x="20.32" y="29.21" smashed="yes" rot="R90">
+<element name="D4" library="Optoelectronic" package="CHIPLED_0805" value="Orange" x="20.32" y="29.21" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="SMT 0805" x="20.32" y="29.21" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}" x="20.32" y="29.21" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="SKU" value="" x="20.32" y="29.21" size="1.27" layer="27" rot="R90" display="off"/>
-<attribute name="COLOR" value="Red" x="20.32" y="29.21" size="1.27" layer="27" rot="R90" display="off"/>
+<attribute name="COLOR" value="Orange" x="20.32" y="29.21" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="MFG" value="Kingbright" x="20.32" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="22.5298" y="31.0896" size="0.8128" layer="25" font="vector" ratio="10" rot="R180"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV" x="20.32" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV" x="20.32" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="D5" library="Optoelectronic" package="CHIPLED_0805" value="Red" x="14.605" y="34.29" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SMT 0805" x="14.605" y="34.29" size="1.27" layer="27" rot="R180" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}" x="14.605" y="34.29" size="1.27" layer="27" rot="R180" display="off"/>
 <attribute name="SKU" value="" x="14.605" y="34.29" size="1.27" layer="27" rot="R180" display="off"/>
-<attribute name="COLOR" value="Red" x="14.605" y="34.29" size="1.27" layer="27" rot="R180" display="off"/>
+<attribute name="COLOR" value="Orange" x="14.605" y="34.29" size="1.27" layer="27" rot="R180" display="off"/>
 <attribute name="MFG" value="Kingbright" x="14.605" y="34.29" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="15.7734" y="35.1028" size="0.8128" layer="25" font="vector" ratio="10" rot="R270"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV" x="14.605" y="34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV" x="14.605" y="34.29" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="D6" library="Optoelectronic" package="CHIPLED_0805" value="Red" x="9.525" y="34.29" smashed="yes">
+<element name="D6" library="Optoelectronic" package="CHIPLED_0805" value="orange" x="9.525" y="34.29" smashed="yes">
 <attribute name="PACKAGE" value="SMT 0805" x="9.525" y="34.29" size="1.27" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}" x="9.525" y="34.29" size="1.27" layer="27" display="off"/>
 <attribute name="SKU" value="" x="9.525" y="34.29" size="1.27" layer="27" display="off"/>
-<attribute name="COLOR" value="Red" x="9.525" y="34.29" size="1.27" layer="27" display="off"/>
+<attribute name="COLOR" value="Orange" x="9.525" y="34.29" size="1.27" layer="27" display="off"/>
 <attribute name="MFG" value="Kingbright" x="9.525" y="34.29" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="8.3566" y="33.7312" size="0.8128" layer="25" font="vector" ratio="10" rot="R90"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV" x="9.525" y="34.29" size="1.778" layer="27" display="off"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV" x="9.525" y="34.29" size="1.778" layer="27" display="off"/>
 </element>
-<element name="D7" library="Optoelectronic" package="CHIPLED_0805" value="Red" x="3.81" y="29.21" smashed="yes" rot="R270">
+<element name="D7" library="Optoelectronic" package="CHIPLED_0805" value="Orange" x="3.81" y="29.21" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="SMT 0805" x="9.524996875" y="33.019996875" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}" x="9.524996875" y="33.019996875" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="SKU" value="" x="9.524996875" y="33.019996875" size="1.27" layer="27" rot="R270" display="off"/>
-<attribute name="COLOR" value="Red" x="9.524996875" y="33.019996875" size="1.27" layer="27" rot="R270" display="off"/>
+<attribute name="COLOR" value="Orange" x="9.524996875" y="33.019996875" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="MFG" value="Kingbright" x="3.81" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="3.1242" y="30.2514" size="0.8128" layer="25" font="vector" ratio="10"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV" x="3.81" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV" x="3.81" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="D8" library="Optoelectronic" package="CHIPLED_0805" value="Red" x="3.81" y="24.13" smashed="yes" rot="R90">
+<element name="D8" library="Optoelectronic" package="CHIPLED_0805" value="Orange" x="3.81" y="24.13" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="SMT 0805" x="-6.985" y="16.51" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}" x="-6.985" y="16.51" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="SKU" value="" x="-6.985" y="16.51" size="1.27" layer="27" rot="R90" display="off"/>
-<attribute name="COLOR" value="Red" x="-6.985" y="16.51" size="1.27" layer="27" rot="R90" display="off"/>
+<attribute name="COLOR" value="Orange" x="-6.985" y="16.51" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="MFG" value="Kingbright" x="3.81" y="24.13" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="4.6228" y="23.0886" size="0.8128" layer="25" font="vector" ratio="10" rot="R180"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV" x="3.81" y="24.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV" x="3.81" y="24.13" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="D9" library="Optoelectronic" package="CHIPLED_0805" value="Red" x="3.81" y="13.97" smashed="yes" rot="R270">
+<element name="D9" library="Optoelectronic" package="CHIPLED_0805" value="Orange" x="3.81" y="13.97" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="SMT 0805" x="9.524996875" y="18.414996875" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}" x="9.524996875" y="18.414996875" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="SKU" value="" x="9.524996875" y="18.414996875" size="1.27" layer="27" rot="R270" display="off"/>
-<attribute name="COLOR" value="Red" x="9.524996875" y="18.414996875" size="1.27" layer="27" rot="R270" display="off"/>
+<attribute name="COLOR" value="Orange" x="9.524996875" y="18.414996875" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="MFG" value="Kingbright" x="3.81" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="2.7432" y="15.0114" size="0.8128" layer="25" font="vector" ratio="10"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV" x="3.81" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV" x="3.81" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="D10" library="Optoelectronic" package="CHIPLED_0805" value="Red" x="3.81" y="8.89" smashed="yes" rot="R90">
+<element name="D10" library="Optoelectronic" package="CHIPLED_0805" value="Orange" x="3.81" y="8.89" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="SMT 0805" x="-6.985" y="0.635" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}" x="-6.985" y="0.635" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="SKU" value="" x="-6.985" y="0.635" size="1.27" layer="27" rot="R90" display="off"/>
-<attribute name="COLOR" value="Red" x="-6.985" y="0.635" size="1.27" layer="27" rot="R90" display="off"/>
+<attribute name="COLOR" value="Orange" x="-6.985" y="0.635" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="MFG" value="Kingbright" x="3.81" y="8.89" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="5.0038" y="7.8486" size="0.8128" layer="25" font="vector" ratio="10" rot="R180"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV" x="3.81" y="8.89" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV" x="3.81" y="8.89" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="D11" library="Optoelectronic" package="CHIPLED_0805" value="Red" x="9.525" y="3.81" smashed="yes">
+<element name="D11" library="Optoelectronic" package="CHIPLED_0805" value="Orange" x="9.525" y="3.81" smashed="yes">
 <attribute name="PACKAGE" value="SMT 0805" x="5.079996875" y="9.525" size="1.27" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}" x="5.079996875" y="9.525" size="1.27" layer="27" display="off"/>
 <attribute name="SKU" value="" x="5.079996875" y="9.525" size="1.27" layer="27" display="off"/>
-<attribute name="COLOR" value="Red" x="5.079996875" y="9.525" size="1.27" layer="27" display="off"/>
+<attribute name="COLOR" value="Orange" x="5.079996875" y="9.525" size="1.27" layer="27" display="off"/>
 <attribute name="MFG" value="Kingbright" x="9.525" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="8.7122" y="6.3754" size="0.8128" layer="25" font="vector" ratio="10"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV" x="9.525" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV" x="9.525" y="3.81" size="1.778" layer="27" display="off"/>
 </element>
-<element name="D12" library="Optoelectronic" package="CHIPLED_0805" value="Red" x="14.605" y="3.81" smashed="yes" rot="R180">
+<element name="D12" library="Optoelectronic" package="CHIPLED_0805" value="Orange" x="14.605" y="3.81" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SMT 0805" x="26.67" y="-1.905" size="1.27" layer="27" rot="R180" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}" x="26.67" y="-1.905" size="1.27" layer="27" rot="R180" display="off"/>
 <attribute name="SKU" value="" x="26.67" y="-1.905" size="1.27" layer="27" rot="R180" display="off"/>
-<attribute name="COLOR" value="Red" x="26.67" y="-1.905" size="1.27" layer="27" rot="R180" display="off"/>
+<attribute name="COLOR" value="Orange" x="26.67" y="-1.905" size="1.27" layer="27" rot="R180" display="off"/>
 <attribute name="MFG" value="Kingbright" x="14.605" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="13.9192" y="5.9944" size="0.8128" layer="25" font="vector" ratio="10"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV" x="14.605" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV" x="14.605" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="D13" library="Optoelectronic" package="CHIPLED_0805" value="Red" x="9.525" y="19.05" smashed="yes">
+<element name="D13" library="Optoelectronic" package="CHIPLED_0805" value="Orange" x="9.525" y="19.05" smashed="yes">
 <attribute name="PACKAGE" value="SMT 0805" x="5.08" y="24.13" size="1.27" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}" x="5.08" y="24.13" size="1.27" layer="27" display="off"/>
 <attribute name="SKU" value="" x="5.08" y="24.13" size="1.27" layer="27" display="off"/>
-<attribute name="COLOR" value="Red" x="5.08" y="24.13" size="1.27" layer="27" display="off"/>
+<attribute name="COLOR" value="Orange" x="5.08" y="24.13" size="1.27" layer="27" display="off"/>
 <attribute name="MFG" value="Kingbright" x="9.525" y="19.05" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="8.3566" y="18.1102" size="0.8128" layer="25" font="vector" ratio="10" rot="R90"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV" x="9.525" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV" x="9.525" y="19.05" size="1.778" layer="27" display="off"/>
 </element>
-<element name="D14" library="Optoelectronic" package="CHIPLED_0805" value="Red" x="14.605" y="19.05" smashed="yes" rot="R180">
+<element name="D14" library="Optoelectronic" package="CHIPLED_0805" value="Orange" x="14.605" y="19.05" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SMT 0805" x="26.67" y="13.97" size="1.27" layer="27" rot="R180" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} Chip 0805 - {ATTR:COLOR}" x="26.67" y="13.97" size="1.27" layer="27" rot="R180" display="off"/>
 <attribute name="SKU" value="" x="26.67" y="13.97" size="1.27" layer="27" rot="R180" display="off"/>
-<attribute name="COLOR" value="Red" x="26.67" y="13.97" size="1.27" layer="27" rot="R180" display="off"/>
+<attribute name="COLOR" value="Orange" x="26.67" y="13.97" size="1.27" layer="27" rot="R180" display="off"/>
 <attribute name="MFG" value="Kingbright" x="14.605" y="19.05" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="15.9004" y="20.2438" size="0.8128" layer="25" font="vector" ratio="10" rot="R270"/>
-<attribute name="PART_NO" value="APT2012SECK/J3-PRV" x="14.605" y="19.05" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PART_NO" value="APT2012SECK/J4-PRV" x="14.605" y="19.05" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="Q1" library="Transistor" package="SOT23" value="MMBT3904" x="20.955" y="10.795" smashed="yes" rot="MR0">
 <attribute name="NAME" x="23.496" y="11.114" size="0.8128" layer="26" font="vector" ratio="10" rot="MR270"/>
@@ -1439,72 +1440,72 @@ design rules under a new name.</description>
 <element name="Q7" library="Transistor" package="SOT23" value="MMBT3904" x="3.81" y="22.86" smashed="yes" rot="MR90">
 <attribute name="NAME" x="2.032" y="22.987" size="0.8128" layer="26" font="vector" ratio="10" rot="MR270"/>
 </element>
-<element name="R1" library="Passive" package="SMD_0603" value="56" x="19.05" y="11.43" smashed="yes" rot="R270">
+<element name="R1" library="Passive" package="SMD_0603" value="82" x="19.05" y="11.43" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="SMT 0603" x="19.05" y="11.43" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}" x="19.05" y="11.43" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="17.1704" y="12.2682" size="0.8128" layer="25" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="R2" library="Passive" package="SMD_0603" value="56" x="21.59" y="11.43" smashed="yes" rot="R90">
+<element name="R2" library="Passive" package="SMD_0603" value="82" x="21.59" y="11.43" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="SMT 0603" x="21.59" y="11.43" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}" x="21.59" y="11.43" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="23.4696" y="11.9888" size="0.8128" layer="25" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="R3" library="Passive" package="SMD_0603" value="56" x="19.05" y="26.67" smashed="yes" rot="R270">
+<element name="R3" library="Passive" package="SMD_0603" value="82" x="19.05" y="26.67" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="SMT 0603" x="19.05" y="26.67" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}" x="19.05" y="26.67" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="17.1704" y="27.5082" size="0.8128" layer="25" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="R4" library="Passive" package="SMD_0603" value="56" x="21.59" y="26.67" smashed="yes" rot="R90">
+<element name="R4" library="Passive" package="SMD_0603" value="82" x="21.59" y="26.67" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="SMT 0603" x="21.59" y="26.67" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}" x="21.59" y="26.67" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="23.4696" y="25.9588" size="0.8128" layer="25" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="R5" library="Passive" package="SMD_0603" value="56" x="12.065" y="35.56" smashed="yes">
+<element name="R5" library="Passive" package="SMD_0603" value="82" x="12.065" y="35.56" smashed="yes">
 <attribute name="PACKAGE" value="SMT 0603" x="12.065" y="35.56" size="1.27" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}" x="12.065" y="35.56" size="1.27" layer="27" display="off"/>
 <attribute name="NAME" x="10.7188" y="36.6014" size="0.8128" layer="25" font="vector" ratio="10"/>
 </element>
-<element name="R6" library="Passive" package="SMD_0603" value="56" x="12.065" y="33.02" smashed="yes" rot="R180">
+<element name="R6" library="Passive" package="SMD_0603" value="82" x="12.065" y="33.02" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SMT 0603" x="12.065" y="33.02" size="1.27" layer="27" rot="R180" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}" x="12.065" y="33.02" size="1.27" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="13.5382" y="31.9786" size="0.8128" layer="25" font="vector" ratio="10" rot="R180"/>
 </element>
-<element name="R7" library="Passive" package="SMD_0603" value="56" x="2.54" y="26.67" smashed="yes" rot="R90">
+<element name="R7" library="Passive" package="SMD_0603" value="82" x="2.54" y="26.67" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="SMT 0603" x="2.54" y="26.67" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}" x="2.54" y="26.67" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="1.3716" y="26.2128" size="0.8128" layer="25" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="R8" library="Passive" package="SMD_0603" value="56" x="5.08" y="26.67" smashed="yes" rot="R270">
+<element name="R8" library="Passive" package="SMD_0603" value="82" x="5.08" y="26.67" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="SMT 0603" x="5.08" y="26.67" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}" x="5.08" y="26.67" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="6.1214" y="26.4922" size="0.8128" layer="25" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="R9" library="Passive" package="SMD_0603" value="56" x="2.54" y="11.43" smashed="yes" rot="R90">
+<element name="R9" library="Passive" package="SMD_0603" value="82" x="2.54" y="11.43" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="SMT 0603" x="2.54" y="11.43" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}" x="2.54" y="11.43" size="1.27" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="1.3716" y="10.7188" size="0.8128" layer="25" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="R10" library="Passive" package="SMD_0603" value="56" x="5.08" y="11.43" smashed="yes" rot="R270">
+<element name="R10" library="Passive" package="SMD_0603" value="82" x="5.08" y="11.43" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="SMT 0603" x="5.08" y="11.43" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}" x="5.08" y="11.43" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="6.2484" y="12.3952" size="0.8128" layer="25" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="R11" library="Passive" package="SMD_0603" value="56" x="12.065" y="2.54" smashed="yes" rot="R180">
+<element name="R11" library="Passive" package="SMD_0603" value="82" x="12.065" y="2.54" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SMT 0603" x="12.065" y="2.54" size="1.27" layer="27" rot="R180" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}" x="12.065" y="2.54" size="1.27" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="13.4112" y="1.4986" size="0.8128" layer="25" font="vector" ratio="10" rot="R180"/>
 </element>
-<element name="R12" library="Passive" package="SMD_0603" value="56" x="12.065" y="5.08" smashed="yes">
+<element name="R12" library="Passive" package="SMD_0603" value="82" x="12.065" y="5.08" smashed="yes">
 <attribute name="PACKAGE" value="SMT 0603" x="12.065" y="5.08" size="1.27" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}" x="12.065" y="5.08" size="1.27" layer="27" display="off"/>
 <attribute name="NAME" x="11.2268" y="6.1214" size="0.8128" layer="25" font="vector" ratio="10"/>
 </element>
-<element name="R13" library="Passive" package="SMD_0603" value="56" x="12.065" y="17.78" smashed="yes" rot="R180">
+<element name="R13" library="Passive" package="SMD_0603" value="82" x="12.065" y="17.78" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SMT 0603" x="12.065" y="17.78" size="1.27" layer="27" rot="R180" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}" x="12.065" y="17.78" size="1.27" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="13.4112" y="16.4846" size="0.8128" layer="25" font="vector" ratio="10" rot="R180"/>
 </element>
-<element name="R14" library="Passive" package="SMD_0603" value="56" x="12.065" y="20.32" smashed="yes">
+<element name="R14" library="Passive" package="SMD_0603" value="82" x="12.065" y="20.32" smashed="yes">
 <attribute name="PACKAGE" value="SMT 0603" x="12.065" y="20.32" size="1.27" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value="{DESCRIPTION} - SMT 0603 - {VALUE}" x="12.065" y="20.32" size="1.27" layer="27" display="off"/>
 <attribute name="NAME" x="11.2268" y="21.3614" size="0.8128" layer="25" font="vector" ratio="10"/>
