@@ -3,10 +3,11 @@ Index
 
 Doc ID        | Part #            | Description
 --------------|-------------------|-------------------------------------------------
+CLK-DWG       | --                | Alarm clock (Model A)
+CLK-DWG-MODEL-B | --              | Alarm clock (Model B)
 CLK-DWG-01    | CLK-PC-01         | Led Matrix display board dimensions
 CLK-DWG-02    | CLK-PC-02         | Touch keypad dimensions
 CLK-DWG-03    | CLK-PC-03         | Motherboard dimensions
-CLK-DWG-04    | --                | Expansion module PCB dimensions
 CLK-DWG-05    | CLK-PC-04         | Left panel PCB dimensions
 CLK-DWG-06    | CLK-STR-01        | Display base
 CLK-DWG-07    | CLK-OVL-01        | Keypad overlay

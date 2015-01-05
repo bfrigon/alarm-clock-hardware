@@ -13,7 +13,6 @@ pdftk   clk-dwg-25.pdf \
         clk-dwg-24.pdf \
         clk-dwg-07.pdf \
         clk-dwg-02.pdf \
-        clk-dwg-04.pdf \
         cat output clk-dwg.pdf
 
 #### Model B ####
@@ -33,5 +32,4 @@ pdftk   clk-dwg-30.pdf \
         clk-dwg-28.pdf \
         clk-dwg-07.pdf \
         clk-dwg-02.pdf \
-        clk-dwg-04.pdf \
         cat output clk-dwg-model-b.pdf
