@@ -1,0 +1,70 @@
+
+BusPirate tests:
+===================
+
+Wiring
+--------
+1. GND (Black)
+2. Change (yellow) ==> Blue
+3. CS (Blue) ==> White
+4. Clock (Green) == > Purble
+5. MISO (Gray) ==> Black
+6. MOSI (Purple) ==> Gray
+7. 5V (Red)
+
+
+Mode settings
+--------------
+
+SPI
+Bus speed : 250 kHz (3)
+Clock polarity : Idle high (2)
+Output clock edge : Idle to active (1)
+Input sample phase : End (2)
+CS: Low enable (2)
+Output type: Open drain (1)
+
+
+Commands
+--------
+
+Reset:
+{ 0x0C 0x01 1 0x55 ]
+
+
+Store config in NVM:
+{ 0x0E 0x01 1 0x55 ]
+
+
+Read GPIO config objects (T29 x 16):
+{ 0x6d 0x01 48 r:48 ]
+
+
+Write GPIO config objects (T29 x 16):
+{ 0x6C 0x01 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0x97 0xF0 0x26 0x97 0xF0 0x22 0x97 0xF0 0x20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+
+
+Read KEY config objects (T13 x 8 ):
+{ 0x3d 0x01 24 r:24 ]
+
+
+Write KEY config objects (T13 x 8):
+{ 0x3c 0x01 24 0x03 0x65 0x0A 0x03 0x65 0x0B 0x03 0x65 0x0B 0x03 0x65 0x0B 0x03 0x65 0x0A 0x03 0x65 0x0D 0x03 0x65 0x0D 0x03 0x65 0x10 ]
+
+
+
+
+
+
+
+Key threshold settings:
+=======================
+
+Key 0 (Time set)        : 0x0A
+Key 1 (Right arrow)     : 0x0B
+Key 2 (Snooze)          : 0x0B
+Key 3 (Left arrow)      : 0x0B
+Key 4 (Hour)            : 0x0A
+key 5 (Min)             : 0x0D
+key 6 (Alarm set)       : 0x0D
+key 7 (Unused)          : --
