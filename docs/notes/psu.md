@@ -1,5 +1,4 @@
-Power requirements :
---------------------
+### Power requirements ###
 
 Description        | 5V        |  3.3V
 -------------------|-----------|----------------

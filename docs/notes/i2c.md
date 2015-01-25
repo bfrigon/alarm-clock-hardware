@@ -1,7 +1,5 @@
-Devices address on bus i2c-0
-============================
+### Devices address on bus i2c-0 ###
 
----------|------|-------|----------------|------|----------------|-------------------------------------------------------------------
 Address  | Read | Write | Board          | Name | Device         | Description
 ---------|------|-------|----------------|------|----------------|-------------------------------------------------------------------
 0101001X | 0x83 | 0x82  | CLK-PC-07      | U1   | TSL2561FN      | Ambient light sensor
@@ -13,9 +11,9 @@ Address  | Read | Write | Board          | Name | Device         | Description
 0011111X | 0x3F | 0x3E  | CLK-PC-07      | U9   | MCP9804-E/MS   | Digital temperature sensor
 
 
-Global call addresses used by PCA3634 :
+#### Global call addresses used by PCA3634 ####
 
----------|------|-------|-----------------------------------
+
 Address  | Read | Write | Description
 ---------|------|-------|-----------------------------------
 1110000X | 0xE1 | 0xE0  | All PCA9634PW devices
