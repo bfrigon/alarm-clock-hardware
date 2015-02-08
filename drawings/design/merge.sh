@@ -63,7 +63,8 @@ change_drawing_title "clk-dwg-07" "Keypad overlay"
 change_drawing_title "clk-dwg-08" "Display (Model B) - 7-Segment PCB" 
 change_drawing_title "clk-dwg-09" "Display (Model B) - Dots PCB" 
 change_drawing_title "clk-dwg-10" "Display (Model B) - Base PCB"
-change_drawing_title "clk-dwg-11" "Speaker holder" 
+change_drawing_title "clk-dwg-11" "Speaker holder"
+change_drawing_title "clk-dwg-12" "Battery interface PCB" 
 change_drawing_title "clk-dwg-20" "Controller PCB assembly" 
 change_drawing_title "clk-dwg-21" "Left panel PCB Assembly" 
 change_drawing_title "clk-dwg-22" "24 x 7 Led Matrix" 
@@ -80,14 +81,14 @@ change_drawing_title "clk-dwg-30" "Final assembly (Model B)"
 ####################################################
 echo "Combining pdf files for model A..."
 
-combine_drawing_files "clk-dwg" "25,11,03,20,05,21,01,22,23,06,24,07,02"
+combine_drawing_files "clk-dwg" "25,11,03,12,20,05,21,01,22,23,06,24,07,02"
 change_drawing_title "clk-dwg" "Alarm clock - model A"
 
 
 ####################################################        
 echo "Combining pdf files for model B..."
 
-combine_drawing_files "clk-dwg-model-b" "30,11,03,20,05,21,08,26,09,29,10,27,06,28,07,02"
+combine_drawing_files "clk-dwg-model-b" "30,11,03,12,20,05,21,08,26,09,29,10,27,06,28,07,02"
 change_drawing_title "clk-dwg" "Alarm clock - model B"
 
 
