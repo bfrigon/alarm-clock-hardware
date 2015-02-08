@@ -15,6 +15,7 @@ CLK-DWG-08    | CLK-PC-05         | Display (model B) - Segments PCB
 CLK-DWG-09    | CLK-PC-06         | Display (model B) - Dots PCB
 CLK-DWG-10    | CLK-PC-07         | Display (model B) - Base PCB
 CLK-DWG-11    | CLK-STR-02        | Speaker holder
+CLK-DWG-12    | CLK-PC-08         | Battery interface PCB
 CLK-DWG-20    | CLK-AS-05         | Motherboard assembly
 CLK-DWG-21    | CLK-AS-04         | Left panel PCB assembly
 CLK-DWG-22    | CLK-AS-03         | Display (model A) - LED matrix
