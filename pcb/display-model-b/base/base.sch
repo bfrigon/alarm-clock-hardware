@@ -1702,8 +1702,8 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <attribute name="DOC_ID" value="CLK-SCH-07"/>
 <attribute name="DOC_PART_NO" value="CLK-PC-07"/>
 <attribute name="DOC_REV" value="C"/>
-<attribute name="DOC_SUBTITLE" value="RGB Lighting"/>
-<attribute name="DOC_TITLE" value="Clock Display - Base"/>
+<attribute name="DOC_SUBTITLE" value=" "/>
+<attribute name="DOC_TITLE" value="Display (model B) - Base"/>
 <attribute name="PROJECT_NAME" value="Alarm Clock (Model B)"/>
 </attributes>
 <variantdefs>
@@ -1891,7 +1891,9 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="U9" library="Logic" deviceset="74*1G04" device="DCK" technology="AHC"/>
 <part name="GND19" library="Power" deviceset="GND" device=""/>
 <part name="SUPPLY19" library="Power" deviceset="3.3V" device=""/>
-<part name="FRAME2" library="Symbols" deviceset="FRAME_LETTER" device=""/>
+<part name="FRAME2" library="Symbols" deviceset="FRAME_LETTER" device="">
+<attribute name="DOC_SUBTITLE" value="RGB lighting"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -2427,7 +2429,9 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <instance part="GND30" gate="GND" x="109.22" y="78.74"/>
 <instance part="GND31" gate="GND" x="233.68" y="152.4"/>
 <instance part="GND32" gate="GND" x="109.22" y="152.4"/>
-<instance part="FRAME2" gate="G$1" x="0" y="0"/>
+<instance part="FRAME2" gate="G$1" x="0" y="0">
+<attribute name="DOC_SUBTITLE" x="0" y="0" size="1.27" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>

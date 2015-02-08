@@ -1101,7 +1101,7 @@ Tyco. # 534206-1
 <attribute name="DOC_PART_NO" value="CLK-PC-05"/>
 <attribute name="DOC_REV" value="B"/>
 <attribute name="DOC_SUBTITLE" value=" "/>
-<attribute name="DOC_TITLE" value="7 Segment display"/>
+<attribute name="DOC_TITLE" value="Display (model B) - 7 seg. display"/>
 <attribute name="PROJECT_NAME" value="Alarm Clock (Model B)"/>
 </attributes>
 <variantdefs>

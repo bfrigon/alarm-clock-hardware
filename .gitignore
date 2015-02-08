@@ -39,7 +39,7 @@ eagle.epf
 *.eps
 
 gerber
-.directory
+*.directory
 
 
 # Ignore compiled objects (GPASM) #

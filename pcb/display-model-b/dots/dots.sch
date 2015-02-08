@@ -556,7 +556,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <attribute name="DOC_PART_NO" value="CLK-PC-06"/>
 <attribute name="DOC_REV" value="A"/>
 <attribute name="DOC_SUBTITLE" value=" "/>
-<attribute name="DOC_TITLE" value="Dots"/>
+<attribute name="DOC_TITLE" value="Display (model B) - Dots"/>
 <attribute name="PROJECT_NAME" value="Alarm Clock (Model B)"/>
 </attributes>
 <variantdefs>
