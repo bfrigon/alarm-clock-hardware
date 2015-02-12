@@ -4072,8 +4072,7 @@ Source: 008-0260-0_E.pdf</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="Power" width="0.4064" drill="0.4572">
-<clearance class="1" value="0.2032"/>
+<class number="1" name="Power" width="0.3048" drill="0.508">
 </class>
 </classes>
 <parts>
@@ -4409,7 +4408,7 @@ Source: 008-0260-0_E.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="J5" gate=":" pin="GND"/>
 <pinref part="GND1" gate="GND" pin="GND"/>
@@ -5190,7 +5189,7 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="55.88" y1="104.14" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="U3" gate="G$1" pin="ZGND"/>
 <pinref part="GND12" gate="GND" pin="GND"/>
@@ -5615,7 +5614,7 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="226.06" y1="73.66" x2="220.98" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="5V_AUD" class="0">
+<net name="5V_AUD" class="1">
 <segment>
 <pinref part="R17" gate="A" pin="2"/>
 <wire x1="223.52" y1="172.72" x2="231.14" y2="172.72" width="0.1524" layer="91"/>
@@ -5767,7 +5766,7 @@ Source: 008-0260-0_E.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="C20" gate="A" pin="1"/>
 <pinref part="GND5" gate="GND" pin="GND"/>
@@ -5959,7 +5958,7 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="226.06" y1="124.46" x2="226.06" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="9V" class="0">
+<net name="9V" class="1">
 <segment>
 <pinref part="U5" gate="G$1" pin="VIN"/>
 <wire x1="139.7" y1="124.46" x2="129.54" y2="124.46" width="0.1524" layer="91"/>
@@ -6112,7 +6111,7 @@ Source: 008-0260-0_E.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <pinref part="GND9" gate="GND" pin="GND"/>
