@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -73,8 +73,8 @@
 <layer number="106" name="BGA-Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="107" name="BD-Top" color="5" fill="1" visible="no" active="no"/>
 <layer number="116" name="centerDrill" color="7" fill="1" visible="no" active="yes"/>
-<layer number="121" name="_tsilk" color="14" fill="1" visible="no" active="yes"/>
-<layer number="122" name="_bsilk" color="5" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
@@ -97,9 +97,22 @@
 <circle x="11.4808" y="5.5626" radius="3.81" width="0" layer="42"/>
 <circle x="11.4808" y="51.5874" radius="3.81" width="0" layer="41"/>
 <circle x="11.4808" y="51.5874" radius="3.81" width="0" layer="42"/>
-<text x="1.27" y="5.715" size="1.27" layer="21" font="vector" ratio="16" rot="SR270" align="center">MUTE</text>
-<text x="1.27" y="20.32" size="1.27" layer="21" font="vector" ratio="16" rot="SR270" align="center">VOL-</text>
-<text x="1.27" y="29.845" size="1.27" layer="21" font="vector" ratio="16" rot="SR270" align="center">VOL+</text>
+<text x="0.762" y="7.874" size="1.27" layer="21" font="vector" ratio="16" rot="SR270">MUTE</text>
+<text x="0.762" y="22.225" size="1.27" layer="21" font="vector" ratio="16" rot="SR270">VOL-</text>
+<text x="0.762" y="32.004" size="1.27" layer="21" font="vector" ratio="16" rot="SR270">VOL+</text>
+<rectangle x1="11.43" y1="45.72" x2="17.78" y2="48.895" layer="39"/>
+<rectangle x1="11.43" y1="8.255" x2="17.78" y2="11.43" layer="39"/>
+<rectangle x1="10.16" y1="8.255" x2="11.43" y2="48.895" layer="39"/>
+<polygon width="0.2032" layer="21">
+<vertex x="17.78" y="8.255"/>
+<vertex x="17.78" y="11.43"/>
+<vertex x="11.43" y="11.43"/>
+<vertex x="11.43" y="45.72"/>
+<vertex x="17.78" y="45.72"/>
+<vertex x="17.78" y="48.895"/>
+<vertex x="10.16" y="48.895"/>
+<vertex x="10.16" y="8.255"/>
+</polygon>
 <wire x1="4.255009375" y1="36.275009375" x2="4.255009375" y2="46.274990625" width="0.1778" layer="121"/>
 <wire x1="4.255009375" y1="46.274990625" x2="9.254996875" y2="46.274990625" width="0.1778" layer="121"/>
 <wire x1="9.254996875" y1="46.274990625" x2="9.254996875" y2="36.275009375" width="0.1778" layer="121"/>
@@ -132,47 +145,41 @@
 <wire x1="8.800590625" y1="26.24500625" x2="8.70059375" y2="26.24500625" width="0.1778" layer="121"/>
 <text x="2.500603125" y="33.74499375" size="1.016" layer="121" font="vector" ratio="18">SW3</text>
 <polygon width="0.1778" layer="122">
-<vertex x="4.50499375" y="52.57119375" curve="-9.499937"/>
-<vertex x="4.604334375" y="52.764028125"/>
-<vertex x="4.213834375" y="53.24284375"/>
-<vertex x="4.54215625" y="53.571165625"/>
-<vertex x="5.020971875" y="53.180665625" curve="-18.999949"/>
-<vertex x="5.420384375" y="53.346121875"/>
-<vertex x="5.48284375" y="53.9608"/>
-<vertex x="5.94715625" y="53.9608"/>
-<vertex x="6.009615625" y="53.346121875" curve="-18.999949"/>
-<vertex x="6.409028125" y="53.180665625"/>
-<vertex x="6.88784375" y="53.571165625"/>
-<vertex x="7.216165625" y="53.24284375"/>
-<vertex x="6.825665625" y="52.764028125" curve="-18.999949"/>
-<vertex x="6.991121875" y="52.364615625"/>
-<vertex x="7.6058" y="52.30215625"/>
-<vertex x="7.6058" y="51.83784375"/>
-<vertex x="6.991121875" y="51.775384375" curve="-18.999949"/>
-<vertex x="6.825665625" y="51.375971875"/>
-<vertex x="7.216165625" y="50.89715625"/>
-<vertex x="6.88784375" y="50.568834375"/>
-<vertex x="6.409028125" y="50.959334375" curve="-18.999949"/>
-<vertex x="6.009615625" y="50.793878125"/>
-<vertex x="5.94715625" y="50.1792"/>
-<vertex x="5.48284375" y="50.1792"/>
-<vertex x="5.420384375" y="50.793878125" curve="-18.999949"/>
-<vertex x="5.020971875" y="50.959334375"/>
-<vertex x="4.54215625" y="50.568834375"/>
-<vertex x="4.213834375" y="50.89715625"/>
-<vertex x="4.604334375" y="51.375971875" curve="-9.499937"/>
-<vertex x="4.50499375" y="51.56880625"/>
-<vertex x="5.1650125" y="51.8421875" curve="67.500024"/>
-<vertex x="5.715" y="51.474675" curve="247.500048"/>
-<vertex x="5.1650125" y="52.2978125"/>
+<vertex x="3.86999375" y="50.66619375" curve="-9.499937"/>
+<vertex x="3.969334375" y="50.859028125"/>
+<vertex x="3.578834375" y="51.33784375"/>
+<vertex x="3.90715625" y="51.666165625"/>
+<vertex x="4.385971875" y="51.275665625" curve="-18.999949"/>
+<vertex x="4.785384375" y="51.441121875"/>
+<vertex x="4.84784375" y="52.0558"/>
+<vertex x="5.31215625" y="52.0558"/>
+<vertex x="5.374615625" y="51.441121875" curve="-18.999949"/>
+<vertex x="5.774028125" y="51.275665625"/>
+<vertex x="6.25284375" y="51.666165625"/>
+<vertex x="6.581165625" y="51.33784375"/>
+<vertex x="6.190665625" y="50.859028125" curve="-18.999949"/>
+<vertex x="6.356121875" y="50.459615625"/>
+<vertex x="6.9708" y="50.39715625"/>
+<vertex x="6.9708" y="49.93284375"/>
+<vertex x="6.356121875" y="49.870384375" curve="-18.999949"/>
+<vertex x="6.190665625" y="49.470971875"/>
+<vertex x="6.581165625" y="48.99215625"/>
+<vertex x="6.25284375" y="48.663834375"/>
+<vertex x="5.774028125" y="49.054334375" curve="-18.999949"/>
+<vertex x="5.374615625" y="48.888878125"/>
+<vertex x="5.31215625" y="48.2742"/>
+<vertex x="4.84784375" y="48.2742"/>
+<vertex x="4.785384375" y="48.888878125" curve="-18.999949"/>
+<vertex x="4.385971875" y="49.054334375"/>
+<vertex x="3.90715625" y="48.663834375"/>
+<vertex x="3.578834375" y="48.99215625"/>
+<vertex x="3.969334375" y="49.470971875" curve="-9.499937"/>
+<vertex x="3.86999375" y="49.66380625"/>
+<vertex x="4.5300125" y="49.9371875" curve="67.500024"/>
+<vertex x="5.08" y="49.569675" curve="247.500048"/>
+<vertex x="4.5300125" y="50.3928125"/>
 </polygon>
-<text x="1.27" y="5.715" size="1.27" layer="121" font="vector" ratio="16" rot="SR270" align="center">MUTE</text>
-<text x="1.27" y="20.32" size="1.27" layer="121" font="vector" ratio="16" rot="SR270" align="center">VOL-</text>
-<text x="1.27" y="29.845" size="1.27" layer="121" font="vector" ratio="16" rot="SR270" align="center">VOL+</text>
-<rectangle x1="11.43" y1="45.72" x2="17.78" y2="48.895" layer="39"/>
-<rectangle x1="11.43" y1="8.255" x2="17.78" y2="11.43" layer="39"/>
-<rectangle x1="10.16" y1="8.255" x2="11.43" y2="48.895" layer="39"/>
-<polygon width="0.2032" layer="21">
+<polygon width="0.2032" layer="121">
 <vertex x="17.78" y="8.255"/>
 <vertex x="17.78" y="11.43"/>
 <vertex x="11.43" y="11.43"/>
@@ -182,6 +189,9 @@
 <vertex x="10.16" y="48.895"/>
 <vertex x="10.16" y="8.255"/>
 </polygon>
+<text x="0.762" y="7.874" size="1.27" layer="121" font="vector" ratio="16" rot="R270">MUTE</text>
+<text x="0.762" y="22.225" size="1.27" layer="121" font="vector" ratio="16" rot="R270">VOL-</text>
+<text x="0.762" y="32.004" size="1.27" layer="121" font="vector" ratio="16" rot="R270">VOL+</text>
 </plain>
 <libraries>
 <library name="Switch">
