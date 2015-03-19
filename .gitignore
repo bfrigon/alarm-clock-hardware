@@ -39,7 +39,6 @@ eagle.epf
 *.eps
 
 gerber
-*.directory
 
 
 # Ignore compiled objects (GPASM) #
@@ -49,3 +48,12 @@ gerber
 *.hex
 *.cof
 *.map
+
+
+
+# Kicad files
+##########################
+
+*.kicad_pcb-bak
+*.bak
+*.pro
