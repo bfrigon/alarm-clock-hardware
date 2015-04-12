@@ -38,8 +38,6 @@ eagle.epf
 
 *.eps
 
-gerber
-
 
 # Ignore compiled objects (GPASM) #
 *.o
