@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/ben/Projects/alarm-clock/pcb/left-panel/left-panel.sch</source>
+    <date>Sun 12 Apr 2015 08:09:57 AM EDT</date>
+    <tool>Eeschema (2015-04-03 BZR 5570)-product</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>LEFT PANEL</title>
+        <company/>
+        <rev>A</rev>
+        <date>Thu 19 Mar 2015</date>
+        <source>left-panel.sch</source>
+        <comment number="1" value="CLK-PC-04"/>
+        <comment number="2" value="CLK-SCH-04"/>
+        <comment number="3" value="ALARM CLOCK"/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>DF3A-4P-2DSA</value>
+      <footprint>Conn-Hirose:DF3A-4P-2DSA</footprint>
+      <fields>
+        <field name="Family">Connector</field>
+        <field name="MFG">Hirose</field>
+      </fields>
+      <libsource lib="connectors" part="HEADER-1x04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>54E037EF</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>B3F-3150</value>
+      <footprint>Switches:B3F-315X</footprint>
+      <fields>
+        <field name="Family">Switch</field>
+      </fields>
+      <libsource lib="switches" part="MOM-SPST-GND"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>54E06BA8</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>B3F-3150</value>
+      <footprint>Switches:B3F-315X</footprint>
+      <fields>
+        <field name="Family">Switch</field>
+      </fields>
+      <libsource lib="switches" part="MOM-SPST-GND"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>54E06CF8</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>B3F-3150</value>
+      <footprint>Switches:B3F-315X</footprint>
+      <fields>
+        <field name="Family">Switch</field>
+      </fields>
+      <libsource lib="switches" part="MOM-SPST-GND"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>54E06D88</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>Hole</value>
+      <footprint>Conn-Wire-Pads:Hole-Screw-NP-#4</footprint>
+      <fields>
+        <field name="Family">Virtual</field>
+      </fields>
+      <libsource lib="connectors" part="Hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>550951CD</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>Hole</value>
+      <footprint>Conn-Wire-Pads:Hole-Screw-NP-#4</footprint>
+      <fields>
+        <field name="Family">Virtual</field>
+      </fields>
+      <libsource lib="connectors" part="Hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55095353</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="switches" part="MOM-SPST-GND">
+      <description>Momentary SPST switch with ground tabs</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">MOM-SPST-GND</field>
+        <field name="Part">-</field>
+        <field name="Family">Switch</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="openCol"/>
+        <pin num="2" name="2" type="openCol"/>
+        <pin num="GND" name="GND" type="openCol"/>
+      </pins>
+    </libpart>
+    <libpart lib="connectors" part="Hole">
+      <description>PCB Mounting Hole</description>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">Hole</field>
+        <field name="Family">Virtual</field>
+      </fields>
+      <pins>
+        <pin num="P" name="P" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="connectors" part="HEADER-1x04">
+      <description>Header - Single Row - 4 Pos</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HEADER-1x04</field>
+        <field name="Part">-</field>
+        <field name="Family">Connector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="switches">
+      <uri>/home/ben/Projects/tools/kicad/library/switches.lib</uri>
+    </library>
+    <library logical="connectors">
+      <uri>/home/ben/Projects/tools/kicad/library/connectors.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/~SSPND">
+      <node ref="J1" pin="4"/>
+      <node ref="SW2" pin="1"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="SW3" pin="1"/>
+    </net>
+    <net code="2" name="Net-(SW1-PadGND)">
+      <node ref="SW1" pin="GND"/>
+    </net>
+    <net code="3" name="/VOL-">
+      <node ref="J1" pin="2"/>
+      <node ref="SW2" pin="2"/>
+    </net>
+    <net code="4" name="Net-(SW2-PadGND)">
+      <node ref="SW2" pin="GND"/>
+    </net>
+    <net code="5" name="/MUTE">
+      <node ref="SW1" pin="2"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="6" name="/VOL+">
+      <node ref="SW3" pin="2"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="7" name="Net-(SW3-PadGND)">
+      <node ref="SW3" pin="GND"/>
+    </net>
+    <net code="8" name="Net-(H1-PadP)">
+      <node ref="H1" pin="P"/>
+    </net>
+    <net code="9" name="Net-(H2-PadP)">
+      <node ref="H2" pin="P"/>
+    </net>
+  </nets>
+</export>
