@@ -8,6 +8,8 @@ F0 "J" -50 250 60 H V L BNB
 F1 "HEADER-1x04" 150 0 40 V V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
+F4 "-" -50 350 40 H I L BNN "Part"
+F5 "Connector" -50 450 40 H I L BNN "Family"
 DRAW
 S -50 -145 10 -155 0 1 0 F
 S -50 -45 10 -55 0 1 0 F
@@ -28,6 +30,7 @@ F0 "H" -50 100 60 H V L BNB
 F1 "Hole" 50 -100 40 H I L TNN
 F2 "" 50 -175 40 H I L TNN
 F3 "" -50 75 60 H I C CNN
+F4 "Virtual" -50 225 40 H I L BNN "Family"
 DRAW
 C 0 0 75 0 1 0 N
 P 11 0 1 0  0 0  -75 0  -75 5  -70 30  -60 45  -50 55  -35 65  -25 70  -10 75  0 75  0 0 F
@@ -43,6 +46,8 @@ F0 "SW" 75 100 60 H V L BNB
 F1 "MOM-SPST-GND" 75 -100 40 H V L TNN
 F2 "" 75 -175 40 H I L TNN
 F3 "" -100 100 60 H I C CNN
+F4 "-" 75 200 40 H I L BNN "Part"
+F5 "Switch" 75 300 40 H I L BNN "Family"
 DRAW
 C -50 0 10 0 1 0 N
 C 50 0 10 0 1 0 N

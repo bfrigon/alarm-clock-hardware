@@ -8,6 +8,8 @@ Title   : Motherboard
 
 Part #  : CLK-PC-03
 REV.    : A
+
+Components : 73
 ```
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -33,24 +35,24 @@ REV.    : A
 | 1   | U6                              | Digital Temperature Sensor                    | -             | MCP9804              | MSOP8                   |
 | 1   | U7                              | Stereo Audio DAC with USB Interface           | -             | PCM2704C             | SSOP28                  |
 | 1   | U8                              | 1.4W Mono Class-D Audio Amplifier             | -             | TPA2005              | PPSOP8                  |
-| 1   | C22                             | Capacitor                                     | 0.022uF (10V) | -                    | SMT-0603                |
+| 1   | C22                             | capacitor                                     | 0.022uF (10V) | -                    | SMT-0603                |
 | 2   | R4-R5                           | Resistor                                      | 1.5k          | -                    | SMT-0603                |
 | 6   | R11, R14-R18                    | Resistor                                      | 100k          | -                    | SMT-0603                |
-| 2   | C4-C5                           | Capacitor                                     | 100nF 25V     | -                    | SMT-0603                |
-| 4   | C10, C12-C13, C28               | Capacitor                                     | 100nF         | -                    | SMT-0603                |
+| 2   | C4-C5                           | capacitor                                     | 100nF 25V     | -                    | SMT-0603                |
+| 4   | C10, C12-C13, C28               | capacitor                                     | 100nF         | -                    | SMT-0603                |
 | 1   | C24                             | Electrolytic capacitor                        | 100uF (10V)   | -                    | SMT-0805                |
 | 1   | C23                             | Electrolytic capacitor                        | 100uF (10V)   | -                    | SMT-1210                |
-| 1   | C11                             | Capacitor                                     | 100uF         | -                    | SMT-0805                |
+| 1   | C11                             | capacitor                                     | 100uF         | -                    | SMT-0805                |
 | 2   | R1-R2                           | Resistor                                      | 10k           | -                    | SMT-0603                |
 | 2   | C20, C27                        | Electrolytic capacitor                        | 10uF          | -                    | SMT-0805                |
 | 1   | Y1                              | Crystal                                       | 12.00 Mhz     | -                    | HC49UP                  |
 | 2   | R12-R13                         | Resistor                                      | 150k          | -                    | SMT-0603                |
 | 1   | R9                              | Resistor                                      | 16 (1%)       | -                    | SMT-0603                |
-| 2   | C15, C18                        | Capacitor                                     | 18pF          | -                    | SMT-0603                |
+| 2   | C15, C18                        | capacitor                                     | 18pF          | -                    | SMT-0603                |
 | 1   | L3                              | Inductor                                      | 1A            | -                    | SMT-0805                |
 | 1   | R8                              | Resistor                                      | 1M            | -                    | SMT-0603                |
-| 1   | C1                              | Capacitor                                     | 1nF (1kV)     | -                    | SMT-0805                |
-| 7   | C14, C16-C17, C19, C21, C25-C26 | Capacitor                                     | 1uF           | -                    | SMT-0603                |
+| 1   | C1                              | capacitor                                     | 1nF (1kV)     | -                    | SMT-0805                |
+| 7   | C14, C16-C17, C19, C21, C25-C26 | capacitor                                     | 1uF           | -                    | SMT-0603                |
 | 1   | R3                              | Resistor                                      | 2.2k          | -                    | SMT-0603                |
 | 2   | R6-R7                           | Resistor                                      | 22            | -                    | SMT-0603                |
 | 1   | R10                             | Resistor                                      | 330           | -                    | SMT-0603                |
