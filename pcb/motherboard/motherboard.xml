@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/home/ben/Projects/alarm-clock/pcb/motherboard/motherboard.sch</source>
-    <date>Sun 12 Apr 2015 07:25:02 AM EDT</date>
+    <date>Sun 12 Apr 2015 07:40:47 AM EDT</date>
     <tool>Eeschema (2015-04-03 BZR 5570)-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>MOTHERBOARD</title>
         <company/>
         <rev>A</rev>
-        <date>Wed 18 Mar 2015</date>
+        <date>Sun 12 Apr 2015</date>
         <source>motherboard.sch</source>
         <comment number="1" value="CLK-PC-03"/>
         <comment number="2" value="CLK-SCH-03"/>
@@ -22,7 +22,7 @@
         <title>MOTHERBOARD\nPSU</title>
         <company/>
         <rev>A</rev>
-        <date>Wed 18 Mar 2015</date>
+        <date>Sun 12 Apr 2015</date>
         <source>psu.sch</source>
         <comment number="1" value="CLK-PC-03"/>
         <comment number="2" value="CLK-SCH-03"/>
@@ -35,7 +35,7 @@
         <title>MOTHERBOARD\nAUDIO</title>
         <company/>
         <rev>A</rev>
-        <date>Wed 18 Mar 2015</date>
+        <date>Sun 12 Apr 2015</date>
         <source>audio.sch</source>
         <comment number="1" value="CLK-PC-03"/>
         <comment number="2" value="CLK-SCH-03"/>
@@ -48,7 +48,7 @@
         <title>MOTHERBOARD\nPERIPHERALS</title>
         <company/>
         <rev>A</rev>
-        <date>Wed 18 Mar 2015</date>
+        <date>Sun 12 Apr 2015</date>
         <source>peripherals.sch</source>
         <comment number="1" value="CLK-PC-03"/>
         <comment number="2" value="CLK-SCH-03"/>
@@ -289,7 +289,7 @@
       <value>100uF (16v)</value>
       <footprint>SMT:CPL-1210</footprint>
       <fields>
-        <field name="Part#">EMK325ABJ107MM-T</field>
+        <field name="Part">EMK325ABJ107MM-T</field>
         <field name="MFG">Taiyo Yuden</field>
         <field name="Family">Passive</field>
       </fields>
@@ -298,10 +298,11 @@
       <tstamp>54FED73D</tstamp>
     </comp>
     <comp ref="J9">
-      <value>AUX PWR</value>
+      <value>103777-5</value>
       <footprint>Conn-Header:HDR-M-2x05</footprint>
       <fields>
         <field name="Family">Connector</field>
+        <field name="MFG">TE Connectivity</field>
       </fields>
       <libsource lib="connectors" part="HEADER-2x05"/>
       <sheetpath names="/PSU/" tstamps="/54F8436C/"/>
@@ -401,20 +402,22 @@
       <tstamp>54FEF278</tstamp>
     </comp>
     <comp ref="J11">
-      <value>Standoff</value>
+      <value>103741-1</value>
       <footprint>Conn-Header:HDR-M-1x01</footprint>
       <fields>
         <field name="Family">Connector</field>
+        <field name="MFG">TE Connectivity</field>
       </fields>
       <libsource lib="connectors" part="HEADER-1x01"/>
       <sheetpath names="/PSU/" tstamps="/54F8436C/"/>
       <tstamp>5505C11C</tstamp>
     </comp>
     <comp ref="J12">
-      <value>Standoff</value>
+      <value>103741-1</value>
       <footprint>Conn-Header:HDR-M-1x01</footprint>
       <fields>
         <field name="Family">Connector</field>
+        <field name="MFG">TE Connectivity</field>
       </fields>
       <libsource lib="connectors" part="HEADER-1x01"/>
       <sheetpath names="/PSU/" tstamps="/54F8436C/"/>
@@ -461,10 +464,11 @@
       <tstamp>55084B51</tstamp>
     </comp>
     <comp ref="J16">
-      <value>Standoff</value>
+      <value>103741-1</value>
       <footprint>Conn-Header:HDR-M-1x01</footprint>
       <fields>
         <field name="Family">Connector</field>
+        <field name="MFG">TE Connectivity</field>
       </fields>
       <libsource lib="connectors" part="HEADER-1x01"/>
       <sheetpath names="/PSU/" tstamps="/54F8436C/"/>
@@ -472,6 +476,7 @@
     </comp>
     <comp ref="L1">
       <value>4.3uH</value>
+      <footprint>SMT:IND-10X10</footprint>
       <fields>
         <field name="PART">7443552430</field>
         <field name="Family">Passive</field>
@@ -1385,19 +1390,6 @@
         <pin num="8" name="OUT1" type="output"/>
       </pins>
     </libpart>
-    <libpart lib="passive" part="CAP">
-      <description>capacitor</description>
-      <fields>
-        <field name="Reference">C</field>
-        <field name="Value">CAP</field>
-        <field name="Part">-</field>
-        <field name="Family">Passive</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="ic-misc" part="MCP9804">
       <description>Digital Temperature Sensor</description>
       <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/22203b.pdf</docs>
@@ -1582,6 +1574,19 @@
         <pin num="7" name="GND" type="power_in"/>
         <pin num="8" name="SW" type="output"/>
         <pin num="EP" name="EPAD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="passive" part="CAP">
+      <description>Capacitor</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CAP</field>
+        <field name="Part">-</field>
+        <field name="Family">Passive</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
   </libparts>
