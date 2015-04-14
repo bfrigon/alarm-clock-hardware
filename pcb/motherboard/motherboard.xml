@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/ben/Projects/alarm-clock/pcb/motherboard/motherboard.sch</source>
-    <date>Sun 12 Apr 2015 08:14:55 AM EDT</date>
+    <date>Tue 14 Apr 2015 03:26:56 AM EDT</date>
     <tool>Eeschema (2015-04-03 BZR 5570)-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -355,7 +355,7 @@
       <tstamp>54FEE210</tstamp>
     </comp>
     <comp ref="C7">
-      <value>47uF 6.3v</value>
+      <value>47uF (6.3v)</value>
       <footprint>SMT:CPL-1206</footprint>
       <fields>
         <field name="Part">GRM31CR60J476ME19K</field>
@@ -367,10 +367,10 @@
       <tstamp>54FEE224</tstamp>
     </comp>
     <comp ref="C9">
-      <value>47uF 6.3v</value>
+      <value>47uF (6.3v)</value>
       <footprint>SMT:CPL-1206</footprint>
       <fields>
-        <field name="Part#">GRM31CR60J476ME19K</field>
+        <field name="Part">GRM31CR60J476ME19K</field>
         <field name="MFG">Murata</field>
         <field name="Family">Passive</field>
       </fields>
@@ -706,7 +706,7 @@
       <tstamp>5501DDCC</tstamp>
     </comp>
     <comp ref="C24">
-      <value>100uF (10V)</value>
+      <value>1uF (10V)</value>
       <footprint>SMT:CPL-0805</footprint>
       <fields>
         <field name="Part">-</field>
@@ -1019,110 +1019,18 @@
     </comp>
   </components>
   <libparts>
-    <libpart lib="ic-misc" part="PCM2704C">
-      <description>Stereo Audio DAC with USB Interface</description>
-      <docs>http://www.ti.com/lit/ds/symlink/pcm2704c.pdf</docs>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">PCM2704C</field>
-        <field name="Family">IC</field>
-      </fields>
-      <pins>
-        <pin num="1" name="XTO" type="output"/>
-        <pin num="2" name="CK" type="output"/>
-        <pin num="3" name="DT" type="BiDi"/>
-        <pin num="4" name="PSEL" type="input"/>
-        <pin num="5" name="DOUT" type="output"/>
-        <pin num="6" name="DGND" type="power_in"/>
-        <pin num="7" name="VDD" type="passive"/>
-        <pin num="8" name="D-" type="BiDi"/>
-        <pin num="9" name="D+" type="BiDi"/>
-        <pin num="10" name="VBUS" type="power_in"/>
-        <pin num="11" name="ZGND" type="power_in"/>
-        <pin num="12" name="AGNDL" type="power_in"/>
-        <pin num="13" name="VCCL" type="power_out"/>
-        <pin num="14" name="VOUTL" type="output"/>
-        <pin num="15" name="VOUTR" type="output"/>
-        <pin num="16" name="VCCR" type="power_out"/>
-        <pin num="17" name="AGNDR" type="power_in"/>
-        <pin num="18" name="VCOM" type="power_out"/>
-        <pin num="19" name="PGND" type="power_in"/>
-        <pin num="20" name="VCCP" type="power_out"/>
-        <pin num="21" name="HOST" type="input"/>
-        <pin num="22" name="HID0/MS" type="input"/>
-        <pin num="23" name="HID1/MC" type="input"/>
-        <pin num="24" name="HID2/MD" type="input"/>
-        <pin num="25" name="TEST1" type="input"/>
-        <pin num="26" name="TEST0" type="input"/>
-        <pin num="27" name="~SSPND" type="output"/>
-        <pin num="28" name="XTI" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="connectors" part="USB-A">
-      <description>USB Connector - Type A</description>
+    <libpart lib="connectors" part="BARREL_JACK">
+      <description>DC Barrel Jack</description>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">USB-A</field>
+        <field name="Value">BARREL_JACK</field>
         <field name="Part">-</field>
         <field name="Family">Connector</field>
       </fields>
       <pins>
-        <pin num="1" name="5V" type="power_in"/>
-        <pin num="2" name="D-" type="BiDi"/>
-        <pin num="3" name="D+" type="BiDi"/>
-        <pin num="4" name="GND" type="power_in"/>
-        <pin num="SH" name="SHIELD" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="connectors" part="RJ45-W-MAG-LED">
-      <description>RJ45 Connector with magnetics and leds</description>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">RJ45-W-MAG-LED</field>
-        <field name="Part">-</field>
-        <field name="Family">Connector</field>
-      </fields>
-      <pins>
-        <pin num="1" name="TD+" type="passive"/>
-        <pin num="2" name="TCT" type="passive"/>
-        <pin num="3" name="TD-" type="passive"/>
-        <pin num="4" name="RD+" type="passive"/>
-        <pin num="5" name="RCT" type="passive"/>
-        <pin num="6" name="RD-" type="passive"/>
-        <pin num="8" name="GND" type="power_in"/>
-        <pin num="LA" name="~" type="passive"/>
-        <pin num="LK" name="~" type="passive"/>
-        <pin num="RA" name="~" type="passive"/>
-        <pin num="RK" name="~" type="passive"/>
-        <pin num="SH" name="SHIELD" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="passive" part="CAP">
-      <description>capacitor</description>
-      <fields>
-        <field name="Reference">C</field>
-        <field name="Value">CAP</field>
-        <field name="Part">-</field>
-        <field name="Family">Passive</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="ic-misc" part="CAT811">
-      <description>4-Pin Microprocessor Power Supply Supervisors</description>
-      <docs>http://www.onsemi.com/pub/Collateral/CAT811-D.PDF</docs>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">CAT811</field>
-        <field name="Family">IC</field>
-      </fields>
-      <pins>
-        <pin num="1" name="GND" type="power_in"/>
-        <pin num="2" name="~RST" type="output"/>
-        <pin num="3" name="~MR" type="input"/>
-        <pin num="4" name="VCC" type="power_in"/>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="connectors" part="HEADER-1x01">
@@ -1137,34 +1045,17 @@
         <pin num="1" name="P1" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="ic-misc" part="TPA2005">
-      <description>1.4W Mono Class-D Audio Amplifier</description>
-      <docs>http://www.ti.com/lit/ds/symlink/pcm2704c.pdf</docs>
+    <libpart lib="connectors" part="HEADER-1x02">
+      <description>Header - Single Row - 2 Pos</description>
       <fields>
-        <field name="Reference">U</field>
-        <field name="Value">TPA2005</field>
-        <field name="Family">IC</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~SHDN" type="input"/>
-        <pin num="3" name="IN+" type="input"/>
-        <pin num="4" name="IN-" type="input"/>
-        <pin num="5" name="VO+" type="output"/>
-        <pin num="6" name="VCC" type="power_in"/>
-        <pin num="7" name="GND" type="power_in"/>
-        <pin num="8" name="VO-" type="output"/>
-        <pin num="EP" name="GND" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="connectors" part="TEST-POINT">
-      <description>Test point</description>
-      <fields>
-        <field name="Reference">TP</field>
-        <field name="Value">TEST-POINT</field>
-        <field name="Family">Virtual</field>
+        <field name="Reference">J</field>
+        <field name="Value">HEADER-1x02</field>
+        <field name="Part">-</field>
+        <field name="Family">Connector</field>
       </fields>
       <pins>
         <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="connectors" part="HEADER-1x03">
@@ -1181,56 +1072,40 @@
         <pin num="3" name="P3" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="connectors" part="HEADER-1x02">
-      <description>Header - Single Row - 2 Pos</description>
+    <libpart lib="connectors" part="HEADER-1x04">
+      <description>Header - Single Row - 4 Pos</description>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">HEADER-1x02</field>
+        <field name="Value">HEADER-1x04</field>
         <field name="Part">-</field>
         <field name="Family">Connector</field>
       </fields>
       <pins>
         <pin num="1" name="P1" type="passive"/>
         <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="connectors" part="BARREL_JACK">
-      <description>DC Barrel Jack</description>
+    <libpart lib="connectors" part="HEADER-2x05">
+      <description>Header - Dual Row - 10 Pos</description>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">BARREL_JACK</field>
+        <field name="Value">HEADER-2x05</field>
         <field name="Part">-</field>
         <field name="Family">Connector</field>
       </fields>
       <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-        <pin num="3" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="connectors" part="Micro_SD">
-      <description>Micro SD card connector</description>
-      <footprints>
-        <fp>SD_Card_Receptacle</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Micro_SD</field>
-        <field name="Part">-</field>
-        <field name="Family">Connector</field>
-      </fields>
-      <pins>
-        <pin num="1" name="DAT2" type="BiDi"/>
-        <pin num="2" name="DAT3/CS" type="input"/>
-        <pin num="3" name="CMD/DI" type="input"/>
-        <pin num="4" name="VDD" type="power_in"/>
-        <pin num="5" name="CLK" type="input"/>
-        <pin num="6" name="VSS" type="power_in"/>
-        <pin num="7" name="DAT0/D0" type="BiDi"/>
-        <pin num="8" name="DAT1" type="BiDi"/>
-        <pin num="DC" name="DC" type="input"/>
-        <pin num="DT" name="DT" type="input"/>
-        <pin num="SH" name="SHIELD" type="power_in"/>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="connectors" part="HEADER-2x10">
@@ -1264,115 +1139,90 @@
         <pin num="20" name="P20" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="ic-misc" part="MCP9804">
-      <description>Digital Temperature Sensor</description>
-      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/22203b.pdf</docs>
+    <libpart lib="connectors" part="Hole">
+      <description>PCB Mounting Hole</description>
       <fields>
-        <field name="Reference">U</field>
-        <field name="Value">MCP9804</field>
-        <field name="Family">IC</field>
+        <field name="Reference">H</field>
+        <field name="Value">Hole</field>
+        <field name="Family">Virtual</field>
       </fields>
       <pins>
-        <pin num="1" name="SDA" type="BiDi"/>
-        <pin num="2" name="SCL" type="input"/>
-        <pin num="3" name="ALERT" type="output"/>
-        <pin num="4" name="GND" type="power_in"/>
-        <pin num="5" name="A2" type="input"/>
-        <pin num="6" name="A1" type="input"/>
-        <pin num="7" name="A0" type="input"/>
-        <pin num="8" name="VCC" type="power_in"/>
+        <pin num="P" name="P" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="connectors" part="HEADER-1x04">
-      <description>Header - Single Row - 4 Pos</description>
+    <libpart lib="connectors" part="Micro_SD">
+      <description>Micro SD card connector</description>
+      <footprints>
+        <fp>SD_Card_Receptacle</fp>
+      </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">HEADER-1x04</field>
+        <field name="Value">Micro_SD</field>
         <field name="Part">-</field>
         <field name="Family">Connector</field>
       </fields>
       <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-        <pin num="3" name="P3" type="passive"/>
-        <pin num="4" name="P4" type="passive"/>
+        <pin num="1" name="DAT2" type="BiDi"/>
+        <pin num="2" name="DAT3/CS" type="input"/>
+        <pin num="3" name="CMD/DI" type="input"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="CLK" type="input"/>
+        <pin num="6" name="VSS" type="power_in"/>
+        <pin num="7" name="DAT0/D0" type="BiDi"/>
+        <pin num="8" name="DAT1" type="BiDi"/>
+        <pin num="DC" name="DC" type="input"/>
+        <pin num="DT" name="DT" type="input"/>
+        <pin num="SH" name="SHIELD" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="passive" part="DIODE">
-      <description>Diode</description>
+    <libpart lib="connectors" part="RJ45-W-MAG-LED">
+      <description>RJ45 Connector with magnetics and leds</description>
       <fields>
-        <field name="Reference">D</field>
-        <field name="Value">DIODE</field>
-        <field name="PART">-</field>
-        <field name="Family">Passive</field>
-      </fields>
-      <pins>
-        <pin num="A" name="A" type="passive"/>
-        <pin num="K" name="K" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="passive" part="INDUCTOR">
-      <description>Inductor</description>
-      <fields>
-        <field name="Reference">L</field>
-        <field name="Value">INDUCTOR</field>
-        <field name="PART">-</field>
-        <field name="Family">Passive</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="passive" part="CRYSTAL">
-      <description>Crystal</description>
-      <fields>
-        <field name="Reference">Y</field>
-        <field name="Value">CRYSTAL</field>
-        <field name="PART">-</field>
-        <field name="Family">Passive</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="passive" part="RESISTOR">
-      <description>Resistor</description>
-      <footprints>
-        <fp>R-0603</fp>
-        <fp>R-0805</fp>
-        <fp>R-1206</fp>
-        <fp>R-1210</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">RESISTOR</field>
+        <field name="Reference">J</field>
+        <field name="Value">RJ45-W-MAG-LED</field>
         <field name="Part">-</field>
-        <field name="Family">Passive</field>
+        <field name="Family">Connector</field>
       </fields>
       <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
+        <pin num="1" name="TD+" type="passive"/>
+        <pin num="2" name="TCT" type="passive"/>
+        <pin num="3" name="TD-" type="passive"/>
+        <pin num="4" name="RD+" type="passive"/>
+        <pin num="5" name="RCT" type="passive"/>
+        <pin num="6" name="RD-" type="passive"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="LA" name="~" type="passive"/>
+        <pin num="LK" name="~" type="passive"/>
+        <pin num="RA" name="~" type="passive"/>
+        <pin num="RK" name="~" type="passive"/>
+        <pin num="SH" name="SHIELD" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="ic-power" part="LM3526-H">
-      <description>Dual port USB power switch with OC protection</description>
-      <docs>http://www.ti.com/lit/ds/symlink/lm3526.pdf</docs>
+    <libpart lib="connectors" part="TEST-POINT">
+      <description>Test point</description>
       <fields>
-        <field name="Reference">U</field>
-        <field name="Value">LM3526-H</field>
-        <field name="Family">IC</field>
+        <field name="Reference">TP</field>
+        <field name="Value">TEST-POINT</field>
+        <field name="Family">Virtual</field>
       </fields>
       <pins>
-        <pin num="1" name="EN1" type="openCol"/>
-        <pin num="2" name="FLAG1" type="openCol"/>
-        <pin num="3" name="FLAG2" type="openCol"/>
-        <pin num="4" name="EN2" type="openCol"/>
-        <pin num="5" name="OUT2" type="output"/>
-        <pin num="6" name="GND" type="power_in"/>
-        <pin num="7" name="VIN" type="power_in"/>
-        <pin num="8" name="OUT1" type="output"/>
+        <pin num="1" name="P1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="connectors" part="USB-A">
+      <description>USB Connector - Type A</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB-A</field>
+        <field name="Part">-</field>
+        <field name="Family">Connector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="5V" type="power_in"/>
+        <pin num="2" name="D-" type="BiDi"/>
+        <pin num="3" name="D+" type="BiDi"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="SH" name="SHIELD" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="ic-power" part="ADP2302">
@@ -1506,36 +1356,19 @@
         <pin num="W24" name="3V3" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="connectors" part="Hole">
-      <description>PCB Mounting Hole</description>
+    <libpart lib="ic-misc" part="CAT811">
+      <description>4-Pin Microprocessor Power Supply Supervisors</description>
+      <docs>http://www.onsemi.com/pub/Collateral/CAT811-D.PDF</docs>
       <fields>
-        <field name="Reference">H</field>
-        <field name="Value">Hole</field>
-        <field name="Family">Virtual</field>
+        <field name="Reference">U</field>
+        <field name="Value">CAT811</field>
+        <field name="Family">IC</field>
       </fields>
       <pins>
-        <pin num="P" name="P" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="connectors" part="HEADER-2x05">
-      <description>Header - Dual Row - 10 Pos</description>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">HEADER-2x05</field>
-        <field name="Part">-</field>
-        <field name="Family">Connector</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-        <pin num="3" name="P3" type="passive"/>
-        <pin num="4" name="P4" type="passive"/>
-        <pin num="5" name="P5" type="passive"/>
-        <pin num="6" name="P6" type="passive"/>
-        <pin num="7" name="P7" type="passive"/>
-        <pin num="8" name="P8" type="passive"/>
-        <pin num="9" name="P9" type="passive"/>
-        <pin num="10" name="P10" type="passive"/>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="~RST" type="output"/>
+        <pin num="3" name="~MR" type="input"/>
+        <pin num="4" name="VCC" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="ic-power" part="ADP2303">
@@ -1561,19 +1394,113 @@
         <pin num="EP" name="EPAD" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="passive" part="SR05">
-      <description>TVS Diode Array</description>
-      <docs>http://www.semtech.com/images/datasheet/sr05.pdf</docs>
+    <libpart lib="ic-power" part="LM3526-H">
+      <description>Dual port USB power switch with OC protection</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm3526.pdf</docs>
       <fields>
-        <field name="Reference">DA</field>
-        <field name="Value">SR05</field>
+        <field name="Reference">U</field>
+        <field name="Value">LM3526-H</field>
+        <field name="Family">IC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN1" type="openCol"/>
+        <pin num="2" name="FLAG1" type="openCol"/>
+        <pin num="3" name="FLAG2" type="openCol"/>
+        <pin num="4" name="EN2" type="openCol"/>
+        <pin num="5" name="OUT2" type="output"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="VIN" type="power_in"/>
+        <pin num="8" name="OUT1" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="passive" part="CAP">
+      <description>capacitor</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CAP</field>
+        <field name="Part">-</field>
         <field name="Family">Passive</field>
       </fields>
       <pins>
         <pin num="1" name="1" type="passive"/>
         <pin num="2" name="2" type="passive"/>
-        <pin num="3" name="3" type="passive"/>
-        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ic-misc" part="MCP9804">
+      <description>Digital Temperature Sensor</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/22203b.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP9804</field>
+        <field name="Family">IC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDA" type="BiDi"/>
+        <pin num="2" name="SCL" type="input"/>
+        <pin num="3" name="ALERT" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="A2" type="input"/>
+        <pin num="6" name="A1" type="input"/>
+        <pin num="7" name="A0" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="ic-misc" part="PCM2704C">
+      <description>Stereo Audio DAC with USB Interface</description>
+      <docs>http://www.ti.com/lit/ds/symlink/pcm2704c.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PCM2704C</field>
+        <field name="Family">IC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="XTO" type="output"/>
+        <pin num="2" name="CK" type="output"/>
+        <pin num="3" name="DT" type="BiDi"/>
+        <pin num="4" name="PSEL" type="input"/>
+        <pin num="5" name="DOUT" type="output"/>
+        <pin num="6" name="DGND" type="power_in"/>
+        <pin num="7" name="VDD" type="passive"/>
+        <pin num="8" name="D-" type="BiDi"/>
+        <pin num="9" name="D+" type="BiDi"/>
+        <pin num="10" name="VBUS" type="power_in"/>
+        <pin num="11" name="ZGND" type="power_in"/>
+        <pin num="12" name="AGNDL" type="power_in"/>
+        <pin num="13" name="VCCL" type="power_out"/>
+        <pin num="14" name="VOUTL" type="output"/>
+        <pin num="15" name="VOUTR" type="output"/>
+        <pin num="16" name="VCCR" type="power_out"/>
+        <pin num="17" name="AGNDR" type="power_in"/>
+        <pin num="18" name="VCOM" type="power_out"/>
+        <pin num="19" name="PGND" type="power_in"/>
+        <pin num="20" name="VCCP" type="power_out"/>
+        <pin num="21" name="HOST" type="input"/>
+        <pin num="22" name="HID0/MS" type="input"/>
+        <pin num="23" name="HID1/MC" type="input"/>
+        <pin num="24" name="HID2/MD" type="input"/>
+        <pin num="25" name="TEST1" type="input"/>
+        <pin num="26" name="TEST0" type="input"/>
+        <pin num="27" name="~SSPND" type="output"/>
+        <pin num="28" name="XTI" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="ic-misc" part="TPA2005">
+      <description>1.4W Mono Class-D Audio Amplifier</description>
+      <docs>http://www.ti.com/lit/ds/symlink/pcm2704c.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPA2005</field>
+        <field name="Family">IC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~SHDN" type="input"/>
+        <pin num="3" name="IN+" type="input"/>
+        <pin num="4" name="IN-" type="input"/>
+        <pin num="5" name="VO+" type="output"/>
+        <pin num="6" name="VCC" type="power_in"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="VO-" type="output"/>
+        <pin num="EP" name="GND" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="passive" part="CAP-E">
@@ -1589,22 +1516,95 @@
         <pin num="K" name="K" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="passive" part="CRYSTAL">
+      <description>Crystal</description>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">CRYSTAL</field>
+        <field name="PART">-</field>
+        <field name="Family">Passive</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="passive" part="DIODE">
+      <description>Diode</description>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">DIODE</field>
+        <field name="PART">-</field>
+        <field name="Family">Passive</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="K" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="passive" part="INDUCTOR">
+      <description>Inductor</description>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">INDUCTOR</field>
+        <field name="PART">-</field>
+        <field name="Family">Passive</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="passive" part="RESISTOR">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R-0603</fp>
+        <fp>R-0805</fp>
+        <fp>R-1206</fp>
+        <fp>R-1210</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RESISTOR</field>
+        <field name="Part">-</field>
+        <field name="Family">Passive</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="passive" part="SR05">
+      <description>TVS Diode Array</description>
+      <docs>http://www.semtech.com/images/datasheet/sr05.pdf</docs>
+      <fields>
+        <field name="Reference">DA</field>
+        <field name="Value">SR05</field>
+        <field name="Family">Passive</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="connectors">
       <uri>/home/ben/Projects/tools/kicad/library/connectors.lib</uri>
     </library>
-    <library logical="ic-misc">
-      <uri>/home/ben/Projects/tools/kicad/library/ic-misc.lib</uri>
+    <library logical="ic-power">
+      <uri>/home/ben/Projects/tools/kicad/library/ic-power.lib</uri>
     </library>
     <library logical="ic-cpu">
       <uri>/home/ben/Projects/tools/kicad/library/ic-cpu.lib</uri>
     </library>
+    <library logical="ic-misc">
+      <uri>/home/ben/Projects/tools/kicad/library/ic-misc.lib</uri>
+    </library>
     <library logical="passive">
       <uri>/home/ben/Projects/tools/kicad/library/passive.lib</uri>
-    </library>
-    <library logical="ic-power">
-      <uri>/home/ben/Projects/tools/kicad/library/ic-power.lib</uri>
     </library>
   </libraries>
   <nets>

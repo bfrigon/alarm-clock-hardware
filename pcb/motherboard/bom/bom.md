@@ -40,7 +40,6 @@ Components : 73
 | 6   | R11, R14-R18                    | Resistor                                      | 100k          | -                    | SMT-0603                |
 | 2   | C4-C5                           | capacitor                                     | 100nF 25V     | -                    | SMT-0603                |
 | 4   | C10, C12-C13, C28               | capacitor                                     | 100nF         | -                    | SMT-0603                |
-| 1   | C24                             | Electrolytic capacitor                        | 100uF (10V)   | -                    | SMT-0805                |
 | 1   | C23                             | Electrolytic capacitor                        | 100uF (10V)   | -                    | SMT-1210                |
 | 1   | C11                             | capacitor                                     | 100uF         | -                    | SMT-0805                |
 | 2   | R1-R2                           | Resistor                                      | 10k           | -                    | SMT-0603                |
@@ -52,14 +51,14 @@ Components : 73
 | 1   | L3                              | Inductor                                      | 1A            | -                    | SMT-0805                |
 | 1   | R8                              | Resistor                                      | 1M            | -                    | SMT-0603                |
 | 1   | C1                              | capacitor                                     | 1nF (1kV)     | -                    | SMT-0805                |
+| 1   | C24                             | Electrolytic capacitor                        | 1uF (10V)     | -                    | SMT-0805                |
 | 7   | C14, C16-C17, C19, C21, C25-C26 | capacitor                                     | 1uF           | -                    | SMT-0603                |
 | 1   | R3                              | Resistor                                      | 2.2k          | -                    | SMT-0603                |
 | 2   | R6-R7                           | Resistor                                      | 22            | -                    | SMT-0603                |
 | 1   | R10                             | Resistor                                      | 330           | -                    | SMT-0603                |
-| 1   | C9                              | Electrolytic capacitor                        | 47uF 6.3v     | -                    | SMT-1206                |
 | 1   | DA1                             | TVS Diode Array                               | CD143A-SR05   | -                    | SOT-143                 |
 | 2   | L1-L2                           | Inductor                                      | 4.3uH         | 7443552430           | SMT:IND-10X10           |
 | 2   | D1-D2                           | Diode                                         | 30V 2A        | B320B-13-F           | SMT:DO-214-AA           |
 | 2   | C2-C3                           | Electrolytic capacitor                        | 100uF (16v)   | EMK325ABJ107MM-T     | SMT-1210                |
-| 1   | C7                              | Electrolytic capacitor                        | 47uF 6.3v     | GRM31CR60J476ME19K   | SMT-1206                |
+| 2   | C7, C9                          | Electrolytic capacitor                        | 47uF (6.3v)   | GRM31CR60J476ME19K   | SMT-1206                |
 | 2   | C6, C8                          | Electrolytic capacitor                        | 47uF (10v)    | LMK316BJ476ML-T      | SMT-1206                |
