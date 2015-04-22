@@ -6,15 +6,21 @@ TMP_PDF_OUTPUT="/tmp/_merge_sh_output.pdf"
 
 change_drawing_title () {
     
-    echo "InfoBegin" > $TMP_METADATA_FILE
-    echo "InfoKey: Title" >> $TMP_METADATA_FILE
-    echo "InfoValue: $2" >> $TMP_METADATA_FILE
-    echo "InfoBegin" >> $TMP_METADATA_FILE
-    echo "InfoKey: Author" >> $TMP_METADATA_FILE
-    echo "InfoValue: Benoit Frigon" >> $TMP_METADATA_FILE
+    git diff --quiet --exit-code $1.pdf
     
-    pdftk $1.pdf update_info $TMP_METADATA_FILE output $TMP_PDF_OUTPUT
-    cp $TMP_PDF_OUTPUT $1.pdf
+    #### Check if the file was modified ####
+    if [ $? -eq 1 ]; then
+    
+        echo "InfoBegin" > $TMP_METADATA_FILE
+        echo "InfoKey: Title" >> $TMP_METADATA_FILE
+        echo "InfoValue: $2" >> $TMP_METADATA_FILE
+        echo "InfoBegin" >> $TMP_METADATA_FILE
+        echo "InfoKey: Author" >> $TMP_METADATA_FILE
+        echo "InfoValue: Benoit Frigon" >> $TMP_METADATA_FILE
+    
+        pdftk $1.pdf update_info $TMP_METADATA_FILE output $TMP_PDF_OUTPUT
+        cp $TMP_PDF_OUTPUT $1.pdf
+    fi
 }
 
 combine_drawing_files () {
@@ -89,7 +95,7 @@ change_drawing_title "clk-dwg" "Alarm clock - model A"
 echo "Combining pdf files for model B..."
 
 combine_drawing_files "clk-dwg-model-b" "30,11,03,12,20,05,21,08,26,09,29,10,27,06,28,07,02"
-change_drawing_title "clk-dwg" "Alarm clock - model B"
+change_drawing_title "clk-dwg-model-b" "Alarm clock - model B"
 
 
 echo        
